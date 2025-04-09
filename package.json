@@ -1,0 +1,17 @@
+{
+  "name": "projekt_frontend",
+  "version": "1.0.0",
+  "author": "thne1900",
+  "license": "ISC",
+  "source": "src/index.html",
+  "browserslist": ">0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel --open chrome",
+    "build": "parcel build"
+  },
+  
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  }
+}
