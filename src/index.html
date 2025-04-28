@@ -3,25 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Webbplatsens startsida."><!--keywords for search engines-->
+<meta name="description" content="Skräckens Sällskap- Startsidan."><!--keywords for search engines-->
 <link rel="stylesheet" href="styles/main.scss"><!--Link to the page's scss file-->
 <script src="https://kit.fontawesome.com/321c3d6291.js" crossorigin="anonymous"></script><!--Downloaded font awesome icons-->
 <title>Skräckfantast? Se hit!</title>
 <script src="js/main.js" type="module"></script><!--Linked javascript file-->
 </head>
 <body>
-<h1>Skräckens Sällskap: Stephen Kings Fanklubb</h1>
+    <header>
+    <a href="index.html"><img src="images/loggo.png" class="desktop-logo" id="logo" alt="Svart/vit bild med två händer"></a><!--Logotype-->
+    <picture><!--Header-img-->
+    <source srcset="images/header.jpg?as=avif&width=1512" type="image/avif">
+    <source srcset="images/header.jpg?as=webp&width=1512" type="image/webp">
+    <source srcset="images/header.jpg?width=1512" type="image/jpg">
+    <img src="images/header.jpg?width=1512" alt="Bild över en stad med svart/vita och röda nyanser" id="header-img">
+    </header>
 
-<ul id="books-list"></ul>
+<nav><!-- The navigation menu-->
+    <ul>
+    <li><a href="author.html"> STEPHEN KING</a></li>
+    <li><a href="api.html"> BÖCKER & FILMER</a></li>
+    <li><a href="about.html"> OM OSS</a></li>
+    </ul>
+    </nav>
 
-<div class="info-movie"></div>
+    <h1>Välkommen till Skräckens Sällskap!<h1>
+        <h2> -För oss som är ett stort fan till skräckförfattaren Stephen King.</h2>
+    <p class="welcomeText">
+    Denna webbplats riktar sig till dig som har en brinnande fascination till allt som hör rysligheter till. 
+    Men självklart är även DU som är nyfiken på skräckgenren, välkommen att ta dig en kik runt på vår webbplats.
+    Kom gärna med synpunkter och ideer till oss för att vi ska kunna utvidga vår plats.</p>
 
-<footer class="footer">
-<p><strong>Besök gärna våra sociala medier:</strong></p>
-<div class="footer-icons">
-<i class="fa-brands fa-facebook"></i>&nbsp;<i class="fa-brands fa-instagram"></i>
-<p><strong>Kontaktuppgifter:</strong>
-<p>Email:</strong> <a href="mailto:thne1900@student.miun.se">skrackens.sallskap@hotmail.com</a></p>
-<p>© Copyright 2025 • Skräckens Sällskap.</p>  
-</footer>
-</body>
+    Bli medlem hoss oss?
+    <br>
+    <button id="member">Bli medlem</button>
+
+    <p class="memberText">Som medlem hos oss får du nyhetsbrev med information om kommande event i form av Bokreleases, filmpremiärer eller andra event
+        kopplande till genren skräck. Du får som medlem också större möjlihet att påverka vårt utbud på webbplatsen.
+        Även chatta med andra medlemmar i ett socialt sammanhang. 
+    </p>
+    <i class="fa-regular fa-comments"></i>
+
+    <footer class="footer"><!--The footer-->
+        <p><strong>Besök gärna våra sociala medier:</strong></p>
+        <div class="footer-icons"><i class="fa-brands fa-facebook"></i>&nbsp;<i class="fa-brands fa-instagram"></i></div>
+        <p><strong>Kontaktuppgifter:</strong>
+        <p>Email:</strong> <a href="mailto:thne1900@student.miun.se">skrackens.sallskap@hotmail.com</a></p>
+        <p>© Copyright 2025 • Skräckens Sällskap.</p>  
+        </footer>
+        </body>
+        </html>
