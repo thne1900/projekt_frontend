@@ -4,7 +4,10 @@
 - Började projektet med att starta upp den grundstruktur på de filer (automatiserad arbetsprocess) som projektet ska innehålla, med NodeJs- parcel. 
 - Startade ett nytt repo på GitHub (versionshantering) för hantering av källkod, med samma namn som projektet. 
 - Därefter synkades projektet till webbtjänsten Netlify, för att därifrån kunna byggas och publiceras.
-- Skapade HTML-filer, JavaScript-filer och SCSS filer som projektet är tänkt ska ha. 
+- Skapade HTML-filer, JavaScript-filer och SCSS filer som projektet är tänkt ska ha.
+- Startade upp med innehållet som ska presenteras på html-sidorna. Med grundlayouten kring navigering, header det huvudsakliga innehållet och footern.
+- I programmet AdobePhotoshop skapades en logotyp (utifrån en egentagen bild), där bildbehandling och bildredigering gjordes. 
+- En header-bild (egentagen) bildhandlades också i AdobePhotoshop. Där lades fokus på bildens presentation och ett försök till att få bilden att framställas med skräck-temat.   
 
 
 
