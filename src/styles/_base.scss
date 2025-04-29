@@ -1,0 +1,121 @@
+/*Created variables*/
+$font-stack:"Amarante", serif;
+$bg-color:rgba(44, 42, 42, 1);
+$bg-color-nav:rgba(177, 22, 32, 1);
+$bg-color-a:rgba(255, 255, 255, 1);
+$primary-color:rgba(30, 30, 30, 1);
+$secondary-color:rgba(255, 255, 255, 1);
+$dark-color:darken(rgba(177, 22, 32, 1), 8%);
+$font-size-standard:1.2em;
+$linehight-standard:1.5;
+$centertext:center;
+$width-standard:1512px;
+$height-standard:auto;
+$margin-r:auto;
+$margin-l:auto;
+
+
+body{
+    font-family: $font-stack;
+    background-color: $bg-color;
+    color: $secondary-color;
+    font-size: $font-size-standard;
+    line-height: $linehight-standard;
+    max-width: $width-standard;
+    height:$height-standard;
+    margin-right:$margin-r;
+    margin-left: $margin-l;
+}
+
+#logo {position:absolute;
+    top:5%;
+    left:5%;
+    border:4px solid black;
+    border-radius: 15px;
+}
+
+#header-img {
+    max-width:$width-standard;
+    width:100%;
+    height: $height-standard;
+    box-shadow: 8px 8px 10px rgb(0,0,0,0.70);
+}
+
+nav {
+    ul{list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: $centertext;
+    background-color: $bg-color-nav;
+    box-shadow: 8px 8px 10px rgb(0,0,0,0.70);
+}
+li { 
+    margin:2%;
+    padding: 2%; 
+    text-align: $centertext;
+
+a{
+    color:$primary-color;
+    background-color: $bg-color-a;
+    padding: 25px;
+    box-shadow: 8px 8px 10px rgb(0,0,0,0.70);
+    cursor: pointer;
+    font-size: 1.4em;
+}
+}
+}
+
+h1 {
+    text-align: $centertext;
+    text-shadow: 10px 10px 12px rgb(0,0,0,0.70);
+}
+h2 {
+text-align: $centertext;
+text-shadow: 10px 10px 12px rgb(0,0,0,0.70);
+}
+
+h3 {
+    align-items: $centertext;
+}
+
+.welcomeText {
+    text-align: $centertext;
+}
+
+#member {
+    background-color: $secondary-color;
+    font-size: $font-size-standard;
+    padding:4%;
+    width:100%;
+    font-weight: bold;
+    border: 4px black solid;
+    box-shadow: 8px 8px 10px rgb(0,0,0,0.70);
+}
+
+.memberText {
+    text-align: $centertext;
+    font-size: 0.9em;
+}
+
+#chat{
+    background-color:black;
+    color: $secondary-color;
+    text-align: $centertext;
+    padding:2%;
+    cursor: pointer;
+}
+
+#visit{
+    font-size: 1.3em;
+}
+.footer-icons {
+    font-size: 40px;
+}
+
+footer{
+    background-color: $dark-color;
+    box-shadow: 8px 8px 10px rgb(0,0,0,0.70);
+    text-align: $centertext;
+    padding:1%;
+    font-size: 0.9em;
+}
