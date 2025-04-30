@@ -1,0 +1,12 @@
+/*keyframes*/
+@keyframes spiderCrawl {
+    0% {
+        transform: translate(600px, 50px);
+    }
+    50%{
+        transform: translate(400px, 25px);
+    }
+    100% {
+        transform: translate(200px, 0);
+}
+}

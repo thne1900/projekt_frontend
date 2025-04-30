@@ -41,6 +41,20 @@ body{
     box-shadow: 8px 8px 10px rgb(0,0,0,0.70);
 }
 
+#spider {
+    position:absolute;
+    width:256px;
+    height: 177px;
+    background-image: url('../images/spider-18883_256.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: spiderCrawl;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-duration: linear;
+}
+
 nav {
     ul{list-style: none;
     display: flex;
@@ -65,6 +79,13 @@ a{
 }
 }
 
+nav ul li a:hover{
+    background-color: $bg-color-nav;
+cursor: pointer;}
+
+/*Background color on the active page.*/
+nav ul li a.active {background-color:$bg-color-nav;}
+
 h1 {
     text-align: $centertext;
     text-shadow: 10px 10px 12px rgb(0,0,0,0.70);
@@ -75,7 +96,7 @@ text-shadow: 10px 10px 12px rgb(0,0,0,0.70);
 }
 
 h3 {
-    align-items: $centertext;
+    text-align: $centertext;
 }
 
 .welcomeText {
@@ -85,11 +106,23 @@ h3 {
 #member {
     background-color: $secondary-color;
     font-size: $font-size-standard;
-    padding:4%;
-    width:100%;
+    padding:2%;
+    width:50%;
+    height:$height-standard;
+    margin-left: $margin-l;
+    margin-right: $margin-r;
     font-weight: bold;
     border: 4px black solid;
-    box-shadow: 8px 8px 10px rgb(0,0,0,0.70);
+    box-shadow: 8px 8px 10px rgb(0,0,0,0.5);
+}
+
+#member:hover {
+    background-color: $bg-color-nav;
+    padding:4%;
+    width:60%;
+    height:$height-standard;
+    cursor: pointer;
+    box-shadow: 8px 8px 12px rgba(0,0,0,0.70);
 }
 
 .memberText {
@@ -109,9 +142,13 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4%;
 }
-#doll{max-width:100%;
-height:auto;}
+#doll{
+    max-width:100%;
+    width:100%;
+    height:$height-standard;
+    }
 
 #img-blood1 {
     display: flex;
