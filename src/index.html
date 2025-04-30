@@ -9,6 +9,8 @@
 <style>@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');</style>
 <title>Skräckfantast? Se hit!</title>
 <script src="js/main.js" type="module"></script><!--Linked javascript file-->
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"><!--Favicon-->
+<link rel="icon" type="image/ico" href="images/favicon.ico">
 </head>
 <body>
     <header>
@@ -18,20 +20,39 @@
     <source srcset="images/header.jpg?as=webp&width=1512" type="image/webp">
     <source srcset="images/header.jpg?width=1512" type="image/jpg">
     <img src="images/header.jpg?width=1512" alt="Bild över en stad med svart/vita och röda nyanser" id="header-img">
+    </picture>
     </header>
 
 <nav><!-- The navigation menu-->
     <ul>
+    <li><a href="index.html"> STARTSIDA</a></li>
     <li><a href="author.html"> STEPHEN KING</a></li>
     <li><a href="api.html"> BÖCKER & FILMER</a></li>
     <li><a href="about.html"> OM OSS</a></li>
     </ul>
     </nav>
+    <div class="grid-container">
+    <div id="img-blood1">
+        <picture><!---img-->
+            <source srcset="images/blood-15492_256.gif?as=webp&width=256" type="image/webp">
+            <source srcset="images/blood-15492_256.gif?width=256" type="image/gif">
+            <img src="images/blood-15492_256.gif?width=256" alt="Röda bloddroppar som droppar" id="blood1">
+        </picture>
+        </div>
 
+        <div id="img-blood2">
+            <picture><!---img-->
+                <source srcset="images/blood-15492_256.gif?as=webp&width=256" type="image/webp">
+                <source srcset="images/blood-15492_256.gif?width=256" type="image/gif">
+                <img src="images/blood-15492_256.gif?width=256" alt="Röda bloddroppar som droppar" id="blood2">
+            </picture>
+            </div>
+    <div id="index-welcome">
     <h1>Välkommen till Skräckens Sällskap!<h1>
-        <h2> -För oss som är ett stort fan till skräckförfattaren Stephen King.</h2>
-        <div class="grid-container">
-        <p class="welcomeText">
+    <h2> -För oss som är ett stort fan till skräckförfattaren Stephen King.</h2>
+    </div>
+
+    <p class="welcomeText">
     Denna webbplats riktar sig till dig som har en brinnande fascination till allt som hör rysligheter till. 
     Men självklart är även DU som är nyfiken på skräckgenren, välkommen att ta dig en kik runt på vår webbplats.
     Kom gärna med synpunkter och ideer till oss för att vi ska kunna utvidga vår plats.</p>
@@ -41,10 +62,18 @@
     <button id="member">Bli medlem</button>
 
     <p class="memberText">Som medlem hos oss får du nyhetsbrev med information om kommande event i form av Bokreleases, filmpremiärer eller andra event
-        kopplande till genren skräck. Du får som medlem också större möjlihet att påverka vårt utbud på webbplatsen.
-        Även chatta med andra medlemmar i ett socialt sammanhang. 
+    kopplande till genren skräck. Du får som medlem också större möjlihet att påverka vårt utbud på webbplatsen.
+    Även chatta med andra medlemmar i ett socialt sammanhang. 
     </p>
-    
+
+    <div id="img-doll1">
+    <picture><!---img-->
+        <source srcset="images/halloween-8548_128.gif?as=webp&width=128" type="image/webp">
+        <source srcset="images/halloween-8548_128.gif?width=128" type="image/gif">
+        <img src="images/halloween-8548_128.gif?width=128" alt="Läskig docka som rör på huvudet" id="doll">
+    </picture>
+    </div>
+
     <p id="chat">Chatta med medlemmar <i class="fa-regular fa-comments"></i></p>
 
     <footer class="footer1"><!--The footer-->

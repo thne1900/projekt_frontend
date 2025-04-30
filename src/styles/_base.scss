@@ -105,6 +105,30 @@ h3 {
     cursor: pointer;
 }
 
+#img-doll1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#doll{max-width:100%;
+height:auto;}
+
+#img-blood1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img-blood2 {
+    @extend#img-blood1;
+}
+#blood1{
+    width: 100%;
+    height:$height-standard;
+}
+#blood2{
+    @extend#blood1;
+}
+
 #visit{
     font-size: 1.3em;
 }
