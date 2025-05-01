@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Skräckens Sällskap- Startsidan."><!--keywords for search engines-->
 <link rel="stylesheet" href="styles/main.scss"><!--Link to the page's scss file-->
-
+<script src="js/linksActive.js" type="module"></script><!--Linked javascript file-->
 <script src="https://kit.fontawesome.com/321c3d6291.js" crossorigin="anonymous"></script><!--Downloaded font awesome icons-->
 <style>@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');</style>
-<title>Skräckfantast? Se hit!</title>
+<title>Skräckens Sällskap!</title>
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"><!--Favicon-->
 <link rel="icon" type="image/ico" href="images/favicon.ico">
 </head>
@@ -24,7 +24,12 @@
     <div id="spider"></div>
     </header>
 <nav><!-- The navigation menu-->
-    <ul>
+    <div id="menu-ham" class="menu-ham">
+        <span class="row"></span>
+        <span class="row"></span>
+        <span class="row"></span>
+    </div>
+    <ul id="links" class="links">
     <li><a href="index.html"> STARTSIDA</a></li>
     <li><a href="author.html"> STEPHEN KING</a></li>
     <li><a href="api.html"> BÖCKER & FILMER</a></li>

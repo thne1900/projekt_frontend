@@ -14,7 +14,6 @@ $height-standard:auto;
 $margin-r:auto;
 $margin-l:auto;
 
-
 body{
     font-family: $font-stack;
     background-color: $bg-color;
@@ -27,6 +26,7 @@ body{
     margin-left: $margin-l;
 }
 
+/*The website logotype with design*/
 #logo {position:absolute;
     top:5%;
     left:5%;
@@ -34,6 +34,7 @@ body{
     border-radius: 15px;
 }
 
+/*The header images have been designed.*/
 #header-img {
     max-width:$width-standard;
     width:100%;
@@ -41,58 +42,69 @@ body{
     box-shadow: 8px 8px 10px rgb(0,0,0,0.70);
 }
 
-#spider {
-    position:absolute;
-    width:256px;
-    height: 177px;
-    background-image: url('../images/spider-18883_256.gif');
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation-name: spiderCrawl;
-    animation-duration: 10s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-duration: linear;
-}
-
+/*The navigation menu has received styling*/
 nav {
-    ul{list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: $centertext;
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: $centertext;
+        background-color: $bg-color-nav;
+        box-shadow: 8px 8px 10px rgb(0,0,0,0.70);
+    }
+        li { 
+            margin:2%;
+            padding: 2%; 
+            text-align: $centertext;
+
+                a{
+                    color:$primary-color;
+                    background-color: $bg-color-a;
+                    padding: 18px;
+                    box-shadow: 8px 8px 10px rgb(0,0,0,0.70);
+                    font-size: $font-size-standard;
+                    text-shadow: 10px 10px 12px rgb(0,0,0,0.70); 
+                    text-decoration: none;
+                }
+        }
+}
+/*Hamburger menu appearance on smaller screen sizes.*/
+.menu-ham{
+    display: none;
+    flex-direction: column;
+    cursor:pointer;
+}
+
+.row{
+    width:50px;
+    height:5px;
     background-color: $bg-color-nav;
-    box-shadow: 8px 8px 10px rgb(0,0,0,0.70);
-}
-li { 
-    margin:2%;
-    padding: 2%; 
-    text-align: $centertext;
-
-a{
-    color:$primary-color;
-    background-color: $bg-color-a;
-    padding: 25px;
-    box-shadow: 8px 8px 10px rgb(0,0,0,0.70);
-    cursor: pointer;
-    font-size: 1.4em;
-}
-}
+    margin:8px;
 }
 
+/*Design on hover on the menu.*/
 nav ul li a:hover{
-    background-color: $bg-color-nav;
-cursor: pointer;}
+    background-color: $bg-color-nav; 
+    padding:25px; 
+    border: 4px black solid; 
+    border-radius: 15px;
+    cursor: pointer;}
 
-/*Background color on the active page.*/
-nav ul li a.active {background-color:$bg-color-nav;}
+/*Background color- the active pages.*/
+nav ul li a.active {
+    background-color:$bg-color-nav;
+}
 
 h1 {
+    font-size: 2.5em;
     text-align: $centertext;
     text-shadow: 10px 10px 12px rgb(0,0,0,0.70);
 }
+
 h2 {
-text-align: $centertext;
-text-shadow: 10px 10px 12px rgb(0,0,0,0.70);
+    font-size: 1.5em;
+    text-align: $centertext;
+    text-shadow: 10px 10px 12px rgb(0,0,0,0.70);
 }
 
 h3 {
@@ -103,6 +115,7 @@ h3 {
     text-align: $centertext;
 }
 
+/*Design of the membership button.*/
 #member {
     background-color: $secondary-color;
     font-size: $font-size-standard;
@@ -128,6 +141,7 @@ h3 {
 .memberText {
     text-align: $centertext;
     font-size: 0.9em;
+    font-style: italic;
 }
 
 #chat{
@@ -138,12 +152,29 @@ h3 {
     cursor: pointer;
 }
 
+/*Animation on the picture spider.*/
+#spider {
+    position:absolute;
+    width:256px;
+    height: 177px;
+    background-image: url('../images/spider-18883_256.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: spiderCrawl;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-duration: linear;
+}
+
+/*Design of website images.*/
 #img-doll1 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 4%;
 }
+
 #doll{
     max-width:100%;
     width:100%;
@@ -155,28 +186,68 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+
 #img-blood2 {
     @extend#img-blood1;
 }
+
 #blood1{
     width: 100%;
     height:$height-standard;
 }
+
 #blood2{
     @extend#blood1;
 }
 
+/*Footer design and content.*/
 #visit{
     font-size: 1.3em;
+    text-shadow: 10px 10px 12px rgb(0,0,0,0.70); 
 }
+
 .footer-icons {
     font-size: 40px;
 }
 
 footer{
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
     background-color: $dark-color;
-    box-shadow: 8px 8px 10px rgb(0,0,0,0.70);
+    box-shadow: 8px 8px 10px rgb(0,0,0,0.5);
     text-align: $centertext;
     padding:1%;
     font-size: 0.9em;
+    text-shadow: 8px 8px 10px rgb(0,0,0,0.5); 
+}
+
+
+/*Media rules for smaller screens, with breakpoints at 1024 and 600px.*/
+@media (max-width:1024px) {
+    h1 {font-size: 2em;}
+    h2 {font-size: 1.4em;}
+    .menu-ham{display:flex;}
+    .links.active {display:flex;}
+    nav {ul{flex-direction: column;display: none;background-color: $bg-color;}
+    li {margin: 0.5%; a{padding: 10px;font-size: $font-size-standard;}}}
+    .welcomeText {margin-left:10%; margin-right:10%;}
+    .memberText {margin-left:10%; margin-right:10%;}
+    nav ul li a:hover{padding:20px;}
+}
+
+@media (max-width:600px) {
+    h1 {font-size: 1.8em;}
+    h2 {font-size: $font-size-standard;}
+    nav ul li a:hover{padding:15px;}
+    .menu-ham{display:flex;}
+    .links.active {display:flex;}
+    nav {ul{flex-direction: column;display: none;background-color: $bg-color;}
+    li {margin-bottom: 4%; a{padding: 5px;font-size: $font-size-standard;}}}
+    .welcomeText {margin-left:4%; margin-right:4%;}
+    #member{ width: 30%; font-size: 1em;padding:2%;}
+    #member:hover{width:35%;}
+    .memberText {font-size: 0.8em;}
+    #visit {font-size: 1em;}
+    .footer-icons {font-size: 30px;}
+    footer {font-size: 0.7em;}
 }
