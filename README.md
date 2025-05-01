@@ -9,7 +9,8 @@
 - I programmet AdobePhotoshop skapades en logotyp (utifrån en egentagen bild), där bildbehandling och bildredigering gjordes. 
 - En header-bild (egentagen) bildhandlades också i AdobePhotoshop. Där lades fokus på bildens presentation och ett försök till att få bilden att framställas med skräck-temat.  
 - Påbörjade därefter arbetet i SCSS-filerna där designen och layouten för webbplatsen kommer utformas. Designen ska ha ett skräcktema,så därför kommer nyanser av svart, vitt, grått, rött att framställas. 
-- Bilder (gif) har infogats i html-dokuemnten för att skapa sidorna mer effektfulla. Effekter på animering har gjorts på bilder med keyframes. 
+- Bilder (gif) har infogats i html-dokuemnten för att skapa sidorna mer effektfulla och förstärka skräcktemat. Effekter på animering har gjorts på bilder med keyframes i en separat SCSS-fil (_animation.scss). 
+- Navigeringsmenyn och knappar blev utformade med effekter vid hover. Detta för att få en kontrast när muspekaren hovrar över menyvalen eller en knapp. 
 
 
 
@@ -30,3 +31,8 @@
 
 ### Skriven av: thne1900 VT 2025.
 #### Kurs: DT211G Frontend-baserad webbutveckling.
+
+#### Källa (bilder):
+- https://pixabay.com/sv/gifs/halloween-skr%C3%A4ck-docka-skr%C3%A4mmande-8548/ (2025-04-30)
+- https://pixabay.com/sv/gifs/blod-droppande-gif-skr%C3%A4ck-animerad-15492/ (2025-04-30)
+- https://pixabay.com/sv/gifs/spindel-insekt-arachnid-kuslig-18883/ (2025-04-30)
