@@ -44,7 +44,7 @@ function displayBooks(books) {
         /*console.log(book);*/
 
         let list=document.createElement("li");
-        list.innerHTML=`Bokens titel: ${book.Title} Bokens år: ${book.Year}`;
+        list.innerHTML=`<i class="fa-solid fa-book-skull"></i> Bokens titel:<span style="color:#CA2B03; font-size:1.3em;"> ${book.Title}</span> Bokens år:<span style="color:#CA2B03;"> ${book.Year}</span>`;
 
         let movieButton=document.createElement("button");
         let closeButton=document.createElement("button");
@@ -69,6 +69,19 @@ function displayBooks(books) {
 movieText.appendChild(closeButton);
 
         booksList.appendChild(list);
+
+        list.style.marginBottom="10%";
+
+        movieButton.style.backgroundColor="#ED6E00";
+        movieButton.style.color="white";
+        movieButton.style.fontSize="1em";
+        movieButton.style.fontWeight="bold";
+        movieButton.style.textShadow="4px 4px 8px rgba(0,0,0,0.7)";
+        movieButton.style.width="90%";
+        movieButton.style.padding="4%";
+        movieButton.style.boxShadow="6px 6px 8px rgba(0,0,0,0.5";
+        movieButton.style.cursor="pointer";
+
     });
 }
 
@@ -100,7 +113,7 @@ async function getMovie(title, movieText){
 
         if(dataMovie.Response==="True"){
 
-            movieText.innerHTML=`Filmtitel: ${dataMovie.Title}, År: ${dataMovie.Year} Poster:`;
+            movieText.innerHTML=`<i class="fa-solid fa-film"></i> Filmtitel:<span style="color:#ED6E00; font-size:1.3em;"> ${dataMovie.Title}</span>, År:<span style="color:#ED6E00;"> ${dataMovie.Year}</span> Poster:`;
 
             let moviePoster=document.createElement("img");
             moviePoster.src=dataMovie.Poster;
@@ -117,3 +130,4 @@ async function getMovie(title, movieText){
         console.error("Gick inte att hämta datan om filmerna", error);
     }
 }
+
