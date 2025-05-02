@@ -31,7 +31,14 @@ body{
     top:5%;
     left:5%;
     border:4px solid black;
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.70);
+    width:8%;
+    height:$height-standard;
+}
+
+#logo:hover {
     border-radius: 15px;
+    width:8.5%;
 }
 
 /*The header images have been designed.*/
@@ -74,7 +81,6 @@ nav {
     flex-direction: column;
     cursor:pointer;
 }
-
 .row{
     width:50px;
     height:5px;
@@ -114,13 +120,12 @@ h3 {
 .welcomeText {
     text-align: $centertext;
 }
-
 /*Design of the membership button.*/
 #member {
     background-color: $secondary-color;
     font-size: $font-size-standard;
     padding:2%;
-    width:50%;
+    width:60%;
     height:$height-standard;
     margin-left: $margin-l;
     margin-right: $margin-r;
@@ -128,7 +133,6 @@ h3 {
     border: 4px black solid;
     box-shadow: 8px 8px 10px rgb(0,0,0,0.5);
 }
-
 #member:hover {
     background-color: $bg-color-nav;
     padding:4%;
@@ -137,13 +141,11 @@ h3 {
     cursor: pointer;
     box-shadow: 8px 8px 12px rgba(0,0,0,0.70);
 }
-
 .memberText {
     text-align: $centertext;
     font-size: 0.9em;
     font-style: italic;
 }
-
 #chat{
     background-color:black;
     color: $secondary-color;
@@ -174,7 +176,6 @@ h3 {
     align-items: center;
     margin-bottom: 4%;
 }
-
 #doll{
     max-width:100%;
     width:100%;
@@ -186,18 +187,49 @@ h3 {
     justify-content: center;
     align-items: center;
 }
-
 #img-blood2 {
     @extend#img-blood1;
 }
-
 #blood1{
     width: 100%;
     height:$height-standard;
 }
-
 #blood2{
     @extend#blood1;
+}
+
+#stephenText1 {
+    margin-left:4%;font-size: 
+    $font-size-standard;
+}
+#stephenText2 {
+    @extend#stephenText1;
+}
+#stephenText3 {
+    font-size: $font-size-standard;
+}
+#stephenText4 {
+    margin-right:4%;
+    font-size: $font-size-standard;
+}
+
+#source{font-size: 0.8em;
+text-align: $centertext;}
+
+#skeleton {
+    max-width:100%;
+    width:100%;
+    height:$height-standard;
+    margin-top:15%;
+}
+
+.fa-book-skull {font-size: 1.7em; margin-top:6%;}
+
+.redWords {
+    color:rgb(143, 10, 10);
+    font-size: $font-size-standard;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(251, 247, 247);
 }
 
 /*Footer design and content.*/
@@ -224,18 +256,29 @@ footer{
 
 /*Media rules for smaller screens, with breakpoints at 1024 and 600px.*/
 @media (max-width:1024px) {
+    /*For all html-pages*/
     h1 {font-size: 2em;}
     h2 {font-size: 1.4em;}
     .menu-ham{display:flex;}
     .links.active {display:flex;}
     nav {ul{flex-direction: column;display: none;background-color: $bg-color;}
     li {margin: 0.5%; a{padding: 10px;font-size: $font-size-standard;}}}
+    nav ul li a:hover{padding:20px;}
+
+    /*Index.html*/
     .welcomeText {margin-left:10%; margin-right:10%;}
     .memberText {margin-left:10%; margin-right:10%;}
-    nav ul li a:hover{padding:20px;}
+    #member {font-size: 1.1em;}
+
+    /*Author.html*/
+    #stephenText1 {margin-left: 15%; margin-right:15%;}
+    #stephenText2 {margin-left: 15%; margin-right:15%;}
+    #stephenText3 {margin-left: 15%; margin-right:15%;}
+    #stephenText4 {margin-left: 15%; margin-right:15%;}
 }
 
 @media (max-width:600px) {
+    /*For all html-pages*/
     h1 {font-size: 1.8em;}
     h2 {font-size: $font-size-standard;}
     nav ul li a:hover{padding:15px;}
@@ -243,11 +286,22 @@ footer{
     .links.active {display:flex;}
     nav {ul{flex-direction: column;display: none;background-color: $bg-color;}
     li {margin-bottom: 4%; a{padding: 5px;font-size: $font-size-standard;}}}
-    .welcomeText {margin-left:4%; margin-right:4%;}
-    #member{ width: 30%; font-size: 1em;padding:2%;}
-    #member:hover{width:35%;}
-    .memberText {font-size: 0.8em;}
     #visit {font-size: 1em;}
     .footer-icons {font-size: 30px;}
     footer {font-size: 0.7em;}
+
+    /*Index.html*/
+    .welcomeText {margin-left:4%; margin-right:4%;}
+    #member{ width: 40%; font-size: 1em;padding:2%;}
+    #member:hover{width:35%;}
+    .memberText {font-size: 0.8em;}
+
+    /*Author.html*/
+    #stephenText1 {font-size: 1em;}
+    #stephenText2 {font-size: 1em;}
+    #stephenText3 {font-size: 1em;}
+    #stephenText4 {font-size: 1em;}
+    .redWords {font-size: 1.1em;}
+    #source{font-size: 0.6em; margin-right:4%;}
+    #skeleton {margin-top:4%;}
 }
