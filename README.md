@@ -11,6 +11,7 @@
 - Påbörjade därefter arbetet i SCSS-filerna där designen och layouten för webbplatsen kommer utformas. Designen ska ha ett skräcktema,så därför kommer nyanser av svart, vitt, grått, rött att framställas. 
 - Bilder (gif) har infogats i html-dokuemnten för att skapa sidorna mer effektfulla och förstärka skräcktemat. Effekter på animering har gjorts på bilder med keyframes i en separat SCSS-fil (_animation.scss). 
 - Navigeringsmenyn och knappar blev utformade med effekter vid hover. Detta för att få en kontrast när muspekaren hovrar över menyvalen eller en knapp. 
+- Utformade sidorna kring responsiviteten, för att innehållet även ska anpassas till mindre skärmenheter med mediaqueries. Har ändrat placeringar, storlek och framställande vid olika skärmstorlekar (1024 och 600px). Gjorde även en uppdelning med kommentarer för att strukturerar upp vilka mediaregler som gäller för vilken html-sida. För en bättre och tydligare läsbarhet. 
 
 
 
