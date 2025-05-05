@@ -17,6 +17,7 @@
 - Utformade sidorna kring responsiviteten, för att innehållet även ska anpassas till mindre skärmenheter med mediaqueries. Har ändrat placeringar, storlek och framställande vid olika skärmstorlekar (1024 och 600px). Gjorde även en uppdelning med kommentarer för att strukturerar upp vilka mediaregler som gäller för vilken html-sida. För en bättre och tydligare läsbarhet. 
 - Har stylat listan med bokverk/filmer i main.js-filen och gjort api.html responsiv i (_grid.scss).
 - Lade till fler keyframes, där animation gjort på bilder för att skapa en pulsernade effekt. 
+- Installerade Apexschart så att ett diagram kan infogas. Diagrammet är tänkt att visa Stephen Kings antal publicerade bokverk under åren, per decennium. Har lagt på styling med mörka färger så att det matchar sidans tema. 
 
 
 
