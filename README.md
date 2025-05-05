@@ -18,6 +18,7 @@
 - Har stylat listan med bokverk/filmer i main.js-filen och gjort api.html responsiv i (_grid.scss).
 - Lade till fler keyframes, där animation gjort på bilder för att skapa en pulsernade effekt. 
 - Installerade Apexschart så att ett diagram kan infogas. Diagrammet är tänkt att visa Stephen Kings antal publicerade bokverk under åren, per decennium. Har lagt på styling med mörka färger så att det matchar sidans tema. 
+- Utformade about.html med innehåll och gjort ett kontaktformulär. Lagt till en del symboler för att förstärka texten. 
 
 
 
