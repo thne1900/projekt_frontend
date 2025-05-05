@@ -46,24 +46,20 @@ h3 {
 }
 
 #stephenText1 {
-   grid-area:3/1/3/1;
+   grid-area:2/1/2/1;
 }
 #stephenText2 {
-    grid-area:4/1/4/1;
+    grid-area:3/1/3/1;
 }
 #stephenText3 {
-    grid-area:3/2/5/2;
+    grid-area:2/2/4/2;
 }
 #stephenText4 {
-    grid-area:3/3/5/3;
+    grid-area:2/3/4/3;
 }
 
-#source{
-    grid-area:5/3/5/3;
-}
-
-#img-skeleton {
-    grid-area:4/3/4/3;
+#chart {
+    grid-area:3/3/3/3;
 }
 
 #api-welcome {
@@ -98,13 +94,13 @@ h3 {
     h3 {grid-area: 4/1/4/4;}
     .memberText {grid-area:6/1/7/4;}
     /*Author.html*/
-    #stephenText1 {grid-area:3/1/3/4;}
-    #stephenText2 {grid-area:4/1/4/4;}
-    #stephenText3 {grid-area:5/1/5/4;}
-    #stephenText4 {grid-area:6/1/6/4;}
-    #img-skeleton {grid-area:7/2/7/2;}
-    #source {grid-area:8/3/8/3;}
-    .footer2 {grid-area:9/1/10/4;}
+    #stephenText1 {grid-area:2/1/2/4;}
+    #stephenText2 {grid-area:3/1/3/4;}
+    #stephenText3 {grid-area:4/1/4/4;}
+    #stephenText4 {grid-area:5/1/5/4;}
+    #chart {grid-area:6/2/6/2;}
+    /*#source {grid-area:8/3/8/3;}*/
+    .footer2 {grid-area:7/1/8/4;}
 
     /*api.html*/
     #books-list {grid-area:3/1/3/4;}
@@ -125,7 +121,12 @@ h3 {
     .memberText{grid-area:6/1/7/4;}
 
     /*Author.html*/
-    #img-skeleton {grid-area:7/1/7/4;}
+    #stephenText1 {grid-area:3/1/3/4;}
+    #stephenText2 {grid-area:4/1/4/4;}
+    #stephenText3 {grid-area:5/1/5/4;}
+    #stephenText4 {grid-area:6/1/6/4;}
+    #chart {grid-area:7/1/7/4;}
+    .footer2 {grid-area:8/1/9/4;}
 
     /*api.html*/
     .heart1 {display:flex; grid-area:3/2/3/2;}
