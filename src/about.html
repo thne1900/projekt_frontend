@@ -22,35 +22,75 @@
     <source srcset="images/header.jpg?width=1512" type="image/jpg">
     <img src="images/header.jpg?width=1512" alt="Bild över en stad med svart/vita och röda nyanser" id="header-img">
 </picture>
+<div id="spider"></div>
     </header>
-<h1>Skräckens sällskap: OM OSS!</h1>
-
-
 <nav><!--The navigation menu-->
     <div id="menu-ham" class="menu-ham">
         <span class="row"></span>
         <span class="row"></span>
         <span class="row"></span>
     </div>
-    <ul>
+    <ul id="links" class="links">
     <li><a href="index.html" class="linkAct"> STARTSIDA</a></li>
     <li><a href="author.html" class="linkAct"> STEPHEN KING</a></li>
     <li><a href="api.html" class="linkAct"> BÖCKER & FILMER</a></li>
     <li><a href="about.html" class="linkAct"> OM OSS</a></li>
     </ul>
     </nav>
+    <div class="grid-container">
+    <div id="img-blood1">
+        <picture><!---img-->
+            <source srcset="images/blood-15492_256.gif?as=webp&width=256" type="image/webp">
+            <source srcset="images/blood-15492_256.gif?width=256" type="image/gif">
+            <img src="images/blood-15492_256.gif?width=256" alt="Röda bloddroppar som droppar" id="blood1">
+        </picture>
+        </div>
 
-    <p class="aboutText">Vi är ett skräckförtjusande gäng som tillsammans har skapat denna webbplatsen för likasinnande.
-        Tanken bakom är att denna webbplats ska fungera som en samlingsplats för dem som är faschinerade av skräck och rysligheter. 
-    </p>
+        <div id="img-blood2">
+            <picture><!---img-->
+                <source srcset="images/blood-15492_256.gif?as=webp&width=256" type="image/webp">
+                <source srcset="images/blood-15492_256.gif?width=256" type="image/gif">
+                <img src="images/blood-15492_256.gif?width=256" alt="Röda bloddroppar som droppar" id="blood2">
+            </picture>
+            </div>
+    <div id="about-welcome">
+    <h1>Om oss!</h1>
+    <h2>- Grundarna och hur du kan kontakta oss</h2>
+    </div>
+    <p class="aboutText">Vi är ett skräckinjagande gäng som tillsammans har skapat denna webbplatsen för likasinnande.
+        Tanken bakom denna webbplats är att den ska fungera som en samlingsplats för dem som är faschinerade av 
+        skräck och rysligheter som författaren Stephen King har bidragit till. Vi är under ständig utveckling och du får gärna 
+        komma med synpunkter om hur vi kan förbättra webbplatsen och utöka den, inom skräckgenren. 
+        Nedan finner du ett kontaktformulär som du kan använda i vilka ändamål som du önskar, alt kan du mejla eller ringa oss.
+        Bli också gärna medlemmar för att få tillgång till våra senaste nyheter! </p>
 
+    <p id="extraP">Rysliga hälsningar// <span id="redText">Skräckens Sällskap</span></p>
+    
+    <div id="creators">
+    <p><span id="redText">Zackarias Andersson:</span> Idèskaparen bakom Skräckens Sällskap. 
+        Är 40 år och bor i Stockholm tillsammans med fru och två barn. 
+        Arbetar som fotograf och har egen fotograferingsstudie.
+    Zackarias favouriter bland Stephens Kings bokverk och filmatieringar: Boken: "It" och filmen: "Cujo".</p>
+    <p><i class="fa-solid fa-envelope"></i> Zackarias mejl: <a href="mailto:thne1900@student.miun.se">zackarias.skrackens.sallskap@hotmail.com</a></p>
+
+    <p><span id="redText"> David Willson</span> En 45-årig skräckfantast och projektledare i grunden. Bor i Göteborg med sin sambo Linnea. 
+        Brinner för att dra igång nya projekt och att ta sig an utmaningar, stora som små. 
+    Davids favouriter bland Stephen Kings bokverk och filmatiseringar: Boken: "The Stand" och filmen: "The shining".</p>
+    <p><i class="fa-solid fa-envelope"></i> Davids mejl: <a href="mailto:thne1900@student.miun.se">davis.skrackens.sallskap@hotmail.com</a> </p>
+
+    <p><span id="redText">Linnea Sjöberg:</span> Bokslukerka och älskar allt som rör skräck. 38-år och bor med sin sambo David i Göteborg.
+    Läser konst på Univeristetet och älskar att skapa abstrakta konstverk. Linneas favouriter bland Stephen Kings bokverk och filmatiseringar: Boken: "Carrie" och filmen: "Doctor sleep". </p>
+    <p><i class="fa-solid fa-envelope"></i> Linneas mejl:<a href="mailto:thne1900@student.miun.se"> linnea.skrackens.sallskap@hotmail.com</a></p>
+    </div>
 
     <form id="form" name="form" method="post" action="mailto:thne1900@student.miun.se">
         <fieldset>
-          <legend>Kontaktformulär:</legend>
+          <legend>Kontaktformulär: <i class="fa-solid fa-pencil"></i></legend>
+         
         <label>
         Förnamn:<br><input type="text" name="firstnamn" id="firstnamn" placeholder="Förnamn">
         </label> 
+    
         <br>
         <label>
         Efternamn:<br><input type="text" name="lastnamn" id="lastnamn" placeholder="Efternamn">
@@ -64,10 +104,11 @@
         <label>
         Meddelande:
         <br>
-        <textarea name="message" id="message" cols="45" rows="8"></textarea>
+        <textarea name="message" id="message" cols="45" rows="8" placeholder="Skriv ditt meddelande här..."></textarea>
         </label>
         <br>
         <input type="submit" name="send" id="send" value="Skicka">
+       
     </fieldset>
         </form>
 
@@ -75,8 +116,9 @@
     <p><strong>Besök gärna våra sociala medier:</strong></p>
     <div class="footer-icons"><i class="fa-brands fa-facebook"></i>&nbsp;<i class="fa-brands fa-instagram"></i></div>
     <p><strong>Kontaktuppgifter:</strong>
-    <p>Email:</strong> <a href="mailto:thne1900@student.miun.se">skrackens.sallskap@hotmail.com</a></p>
+    <p><i class="fa-solid fa-envelope"></i> Email:</strong> <a href="mailto:thne1900@student.miun.se">skrackens.sallskap@hotmail.com</a></p>
     <p>© Copyright 2025 • Skräckens Sällskap.</p>  
     </footer>
+</div>
 </body>
     </html>

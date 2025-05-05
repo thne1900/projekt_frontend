@@ -125,6 +125,7 @@ h3 {
 #member {
     background-color: $secondary-color;
     font-size: $font-size-standard;
+    font-family: $font-stack;
     padding:2%;
     width:60%;
     height:$height-standard;
@@ -139,6 +140,7 @@ h3 {
     padding:4%;
     width:60%;
     height:$height-standard;
+    border:8px black solid;
     cursor: pointer;
     box-shadow: 8px 8px 12px rgba(0,0,0,0.70);
 }
@@ -255,6 +257,62 @@ text-align: $centertext;}
     @extend#heart1;
 }
 
+.aboutText {
+    text-align: center; 
+    margin-right:20%; 
+    margin-left:20%;
+}
+#extraP {
+    text-align: center;
+}
+#redText {
+    color:$bg-color-nav; 
+    font-size: 1.3em;
+}
+
+form {width:80%;
+     height:$height-standard;
+     margin-bottom: 4%;
+    }
+fieldset {
+    border: 8px grey solid;
+}
+legend {
+    text-align: center; 
+    font-size: 1.4em;
+}
+input {
+    width:60%;
+    padding:2%;
+}
+input::placeholder {
+    font-weight: bold;
+    color:red; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+textarea::placeholder{
+    color:red;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+#send {
+    width:30%;
+    padding:2%;
+    border:4px black solid;
+    font-family: $font-stack; 
+    font-size: 1.3em;
+    text-shadow: 2px 2px 4px rgba(177, 22, 32, 0.8);
+}
+#send:hover {font-size: 1.4em;
+    cursor: pointer; 
+    border:8px rgba(177, 22, 32) solid;
+    text-shadow: 6px 6px 10px rgba(177, 22, 32, 0.8);
+}
+#creators {
+    text-align: center;
+    margin-left:8%;
+}
+
 /*Footer design and content.*/
 #visit{
     font-size: 1.3em;
@@ -302,6 +360,11 @@ footer{
 
     /*Api.html*/
     #books-list {margin-left:15%; margin-right:15%;font-size: 1.1em;}
+
+    /*About.html*/
+    #creators {margin-left:4%; margin-right:4%; border: 8px grey solid; padding:2%; margin-bottom: 4%;}
+    form {margin-left:$margin-l; margin-right:$margin-r; width:60%; margin-bottom: 4%;}
+
 }
 
 @media (max-width:600px) {
@@ -333,4 +396,10 @@ footer{
 
     /*Api.html*/
     #books-list {margin-left:10%; margin-right:10%;font-size: 1em;}
+
+    /*About.html*/
+    form{width:60%;}
+    textarea {width:95%;}
+    legend {font-size: 1.3em;}
+    #send {width:50%;}
 }
