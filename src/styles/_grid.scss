@@ -34,6 +34,8 @@ h3 {
     grid-area:6/2/7/2;
 }
 
+#memberMessage {grid-area:6/2/7/2;}
+
 #chat {
     grid-area:7/2/7/2;
 }
@@ -77,8 +79,9 @@ h3 {
 }
 
 #books-list{
-    grid-area:3/2/3/2;
+    grid-area:3/1/3/1;
 }
+.books-info{ grid-area:3/2/3/4;}
 
 .aboutText {grid-area:2/1/3/4;}
 
