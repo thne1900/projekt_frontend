@@ -20,7 +20,8 @@
 - Installerade Apexschart så att ett diagram kan infogas. Diagrammet är tänkt att visa Stephen Kings antal publicerade bokverk under åren, per decennium. Har lagt på styling med mörka färger så att det matchar sidans tema. 
 - Utformade about.html med innehåll och gjort ett kontaktformulär. Lagt till en del symboler för att förstärka texten. 
 - Utformade vissa element med mer effekter och animonationer. Skapade en js-fil (functions.js) där funktion på en knapp och textrutan ska fungera. Vid tryck på en knapp ("Bli medlem") ska en textruta med innehållande text komma upp och visas under 2 sekunder.
-- Tänkte fylla ut api-html med lite extra innehåll, en kort liten preentation på böckernas handling. 
+- Tänkte fylla ut api-html med lite extra innehåll, en kort liten presentation på böckernas handling. 
+- Lade till en funktion för att kunna välja färgtema. Då ursprungstemat är mörkt med mörkar färger och nyanser, ska en besökare via en knapp kunna ändra färg till en ljusttema, om den så önskar. Därför skapades en js-fil (colorScheme.js) för knappen och dess funktion på växling och i SCSS filen (_colorscheme.scss) vilka ljusa färger som ska ändras. 
 
 
 
