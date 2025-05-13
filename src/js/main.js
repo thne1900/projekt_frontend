@@ -77,10 +77,12 @@ movieText.appendChild(closeButton);
         movieButton.style.fontSize="1em";
         movieButton.style.fontWeight="bold";
         movieButton.style.textShadow="4px 4px 8px rgba(0,0,0,0.7)";
-        movieButton.style.width="90%";
+        movieButton.style.width="95%";
         movieButton.style.padding="4%";
         movieButton.style.boxShadow="6px 6px 8px rgba(0,0,0,0.5";
         movieButton.style.cursor="pointer";
+        movieButton.style.marginBottom="4%";
+
 
     });
 }

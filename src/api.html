@@ -39,6 +39,7 @@
     </ul>
     </nav>
 <div class="grid-container">
+
     <div id="img-blood1">
         <picture><!---img-->
             <source srcset="images/blood-15492_256.gif?as=webp&width=256" type="image/webp">
@@ -54,44 +55,107 @@
                 <img src="images/blood-15492_256.gif?width=256" alt="Röda bloddroppar som droppar" id="blood2">
             </picture>
             </div>
-            <!--<div class="heart1">
-                <picture>
-                    <source srcset="images/heart-5079717_640.png?as=webp&width=640" type="image/webp">
-                    <source srcset="images/heart-5079717_640.png?as=avif&width=640" type="image/avif">
-                    <source srcset="images/heart-5079717_640.png?width=640" type="image/png">
-                    <img src="images/heart-5079717_640.png" alt="Ett hjärta (organ)" id="heart1">
-                </picture>
-                </div>
-                <div class="heart2">
-                <picture>
-                    <source srcset="images/heart-5079717_640.png?as=webp&width=640" type="image/webp">
-                    <source srcset="images/heart-5079717_640.png?as=avif&width=640" type="image/avif">
-                    <source srcset="images/heart-5079717_640.png?width=640" type="image/png">
-                    <img src="images/heart-5079717_640.png" alt="Ett hjärta (organ)" id="heart2">
-                </picture>
-                </div>-->
+           
 <div id="api-welcome">
 <h1>Böcker & filmer</h1>
-<h2>- Några av S.K samlade verk</h2>
+<h2>- Några av S.K samlade verk <i class="fa-solid fa-book-open"></i></h2>
 </div>
+
+<!--The list of books retrieved via the api.-->
 <ul id="books-list"></ul>
 
+<h3 id="books-resp">Böckernas handling: <i class="fa-solid fa-book-open"></i></h3>
+
+<!--Info about each downloaded book.-->
 <div class="books-info">
-<br>
+<h4 class="books-title">Carrie</h4>
 <p><span class="firstWords">Carrie är en tjej</span> som är lite udda. Hon bär speciella kläder, är lite klumpig och har därför blivit utsatt för mobbing.
 Men hon har egenskaper som ingen annan besitter, då hon kan låsa dörrar och krossa speglar när hon går in i koncentration. 
 Men då hennes mor är djupt troende måste denna förmågan döljas. Efter ett skämt på skolan bal kan hon inte längre tygla sin kraft och
-det blir ett tumult för alla som är närvarande på skolbalen.</p>
-
-<p><span class="firstWords">En författare återkommer</span> till sin barndomsstad för att skriva en bok om staden han växte upp i. 
-    Men mystiska incidenter inträffar och när staden får en besökare bär den på mörka hemligheter. 
-    Som sätter en hel stad i skräck.</p>
+det blir ett tumult för alla som är närvarande.</p>
 <br>
+<h4 class="books-title">Salem`s Lot</h4>
+<p><span class="firstWords">En författare återkommer</span> till sin barndomsstad för att skriva en bok om staden han växte upp i som liten. 
+Men mystiska incidenter inträffar där och när staden får en okänd besökare, bär den på mörka oanade hemligheter. 
+Detta sätter en hel stad i skräck och visar sig vara något som ingen av befolkningen i staden kunde ana.</p>
+<br>
+<br>
+<h4 class="books-title">The shining</h4>
 <p><span class="firstWords">Jack Torrance får erbjudandet</span> om att ta hand om ett hotell över vintern. 
-    Han tar med sig hela familjen dit och ska försöka återhämta sig efter att hans författarskap och arbetskarriär har fått sig en törn.
-     Men snart börjar hans son uppleva konstiga saker och hotellet har snart fått ett grepp om familjen. </p>
-
-<p><span class="firstWords"></span></p>
+Han tar med sig hela familjen dit och ska försöka återhämta sig efter att hans författarskap och arbetskarriär har fått sig en törn.
+Men snart börjar hans son Danny uppleva konstiga saker och hotellet har snart fått ett skrämmande grepp om familjen. </p>
+<br>
+<br>
+<h4 class="books-title">The Stand</h4>
+<p><span class="firstWords">En stark influensa</span> bryter ut i USA. Sjukdomen sprids snabbt och sjukdomsförloppet 
+är hemskt. Städer drabbas av många dödsfall och det blir kaotiskt i landet. Men det visar sig att vissa trots detta är 
+immuna mot viruset och snart börjar de som inte viruset biter på att sammarbeta. 
+Men ändå bildas det i denna sjukdomstid två läger, de goda mot de onda.</p>
+<br>
+<br>
+<h4 class="books-title">Cujo</h4>
+<p><span class="firstWords">10-åriga Brett har en bästa vän</span> en stor Saint Bernards-hund med namnet "Cujo"
+När Cujo en dag jagar en kanin som springer ner i ett hål, blir Cujo biten av fladdermöss, som är rabiessmittade. 
+Hunden Cujo blir mycket sjuk och förvandlas från en snäll familjehund till en skräckinjagande best.</p> 
+<br>
+<h4 class="books-title">Pet Sematary</h4>
+<p><span class="firstWords">Louis Creed flyttar </span> tillsammans med sin familj till ett hus ute på landet. 
+Men märker snart att det är något läskigt med traktens djurkyrkogård, där barn har begravt sina husdjur och 
+marken sägs bära på förbannelser. När deras katt blir överkörd och återuppstår förstår de att de har att göra med mörka krafter. 
+När familjen drabbas av en tragedi och kallar på de onda, får de ångra sitt val. </p> 
+<br>
+<br>
+<h4 class="books-title">It</h4>
+<p><span class="firstWords">I den lilla staden Derry, </span> långt ner i kloakerna, lurar något mystiskt- något ondskefullt. 
+Det som kallas Det. Ett gäng kompisar har tillsammans försökt att trotsa Det fär att med gemensamma krafter slå hål på 
+ondskan och driva Det tillbaka. Kompisgänget har lovat varandra att stå emot om Det kommer tillbaka igen. </p> 
+<br>
+<h4 class="books-title">Gerald`s Game</h4>
+<p><span class="firstWords">Ett spel mellan två personer</span> som urartar och detta sker långt ifån andra människor i ett ödsligt hus. 
+En man och en hustru ska leka en lek, men leken går inte som tänkt. 
+Mannen dör och hustrun sitter fast utan att någon kan höra henne skrika om att hon är i behov av hjälp. 
+Hon blir ensam med sina tankar och de smyger längre och längre inpå hennes ensamhet.</p>
+<br>
+<br>
+<h4 class="books-title">Insomnia</h4>
+<p><span class="firstWords">Ralph kan inte sova</span> efter att hans fru gick bort. 
+När han vaken på nätterna märker att det pågår något skumt i staden nattetid, 
+då är det inte bara Ralphs sömn som blir drabbad. Han verkar se människor med något som strömmar från deras huvuden.
+Han börjar också uppfatta sin snälla vän från en annan sida och staden är han rädd ska omvandlas till Armageddon.</p>
+<br>  
+<h4 class="books-title">Blaze</h4> 
+<p><span class="firstWords">Bakom mannen Clayton</span> finns det en plan, men ingen aning om hur denna ska slå in. 
+Med fler hjärnhalvor tillsammans med hans kropp skulle en kidnappning av ett spädbarn genomföras. 
+Men hur väl har detta planerats, när han plötsligt springer in i en skog med det kidnappade spädbarnet och en kapplöpning mot tiden har precis börjat. </p>
+<br>
+<h4 class="books-title">Doctor Sleep</h4>
+<p><span class="firstWords">En pojke lyckades fly</span> från sin besatta pappa för 36 år sedan (The Shining).
+Pojken Danny får nu i vuxenålder efter en kämpig uppväxt, en arbete på ett sjukhem som vårdare. 
+Han kan med sin synska förmåga, trösta och lugna de patienter som inte har långt kvar. Patienterna kom att kalla Danny för Doktor Sömn. 
+Snart verkar han få telepatisk kontakt med en flicka som behöver hjälp. Han dras då in i en skrämmande jakt som leder tillbaka i tiden.</p>
+<br>
+<h4 class="books-title">Finders Keepers</h4>
+<p><span class="firstWords">Morris är en pojke</span> som är besatt av författaren John Rothstein, till den grad att han gör något dumt 
+för att komma över ett flertal anteckningsböcker. En annan pojke hitta en mängd anteckningböcker av John Rothstein nedgrävd i en koffert. 
+Morris vill ta tillbaka sin skatt och hämndlysten driver honom. Samtidigt försöker Bill, detektiven från Finders Keepers stoppa situationen. </p>
+<br>   
+<h4 class="books-title">Elevation</h4>
+<p><span class="firstWords">I staden Castle Rock</span> sprids rykten snabbt. Så därför berättar Scott till sin doktorvän Bob om hans speciella tillstånd. 
+Han går ner i vikt varje dag, utan att utseendet påverkas. Scott får nya grannar som äger en restaurang och snart bildar grannarna en vänskap. 
+En vänskap som verkar hjälpa honom genom sitt speciella tillstånd.</p>
+<br>
+<br>
+<h4 class="books-title">The Institute</h4>
+<p><span class="firstWords">Pojken Luke Ellis vet </span> att han är unik. Han har en stor begåvning och kan påverka sin omgivning vid upprört tillstånd. 
+Utan att någon rört det kan en tallrik falla till golvet och gå i tusen bitar. 
+Men det är någon som iakttar honom och en natt blir han kidnappad och placerad på Institutet. 
+Där sitter fler barn med särskilda begåvningar för att vara spelbrickor i något större. </p>
+<br>
+<br>
+<h4 class="books-title">Later</h4>
+<p><span class="firstWords">Jamie Conklin önskar sig</span> en vanlig uppväxt. Han bor och lever med sin mamma som är ensamstående och arbetar hårt.
+Det som Jamie besitter hör inte till normaliteten, då han kan se och veta saker som ingen annan person kan göra. 
+När han ska hjälpa polisen i sitt sökande efter en mödare, verkar priset blir väldigt högt.</p>  
 </div>
 
 <footer class="footer3"><!--The footer-->

@@ -270,25 +270,23 @@ text-align: $centertext;}
     list-style: none;
 }
 
-.books-info {margin-right:4%;}
+.books-info {
+    margin-right:4%; 
+    font-size: 1em;
+}
+
+#books-resp {
+    display:none;
+}
+
+.books-title {
+    display:none;
+}
 
 .firstWords {
     color: #CA2B03;
     font-size:1.3em;
     text-shadow: 4px 4px 8px rgba(0,0,0,0.70);
-}
-
-#heart1 {position: relative;
-    max-width: 100%;
-    width:100%;
-    height:auto;
-    animation-name: heartPulse;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-#heart2 {
-    @extend#heart1;
 }
 
 .aboutText {
@@ -395,7 +393,10 @@ footer{
     #chart {margin-top: 4%;}
 
     /*Api.html*/
-    #books-list {margin-left:15%; margin-right:15%;font-size: 1.1em;}
+    #books-list {margin-left:4%; margin-right:4%;font-size: 1.1em;}
+    .books-info {font-size: 1em; margin-left:8%; margin-right:8%; text-align: center;}
+    #books-resp {display:inline; text-shadow: 8px 8px 10px rgb(248, 244, 244);}
+    .books-title {display: inline; font-size: 1.4em; margin-bottom: 0.1%; color:#CA2B03; text-shadow: 8px 8px 10px rgb(248, 244, 244); text-align: center;}
 
     /*About.html*/
     #creators {margin-left:4%; margin-right:4%; border: 8px grey solid; padding:2%; margin-bottom: 4%;}
