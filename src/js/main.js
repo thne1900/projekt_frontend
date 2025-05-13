@@ -81,7 +81,7 @@ movieText.appendChild(closeButton);
         movieButton.style.padding="4%";
         movieButton.style.boxShadow="6px 6px 8px rgba(0,0,0,0.5";
         movieButton.style.cursor="pointer";
-        movieButton.style.marginBottom="4%";
+        movieButton.style.marginBottom="6%";
 
 
     });

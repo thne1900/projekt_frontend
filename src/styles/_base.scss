@@ -227,6 +227,35 @@ h3 {
     @extend#blood1;
 }
 
+#skeleton {
+    max-width:100%;
+    width:100%;
+    height:$height-standard;
+    margin-top:15%;
+}
+
+#img-skeleton {
+    display: flex; justify-content: center;align-items: center;
+}
+
+.welcomeText {
+    color: $dark-color;text-shadow: 5px 5px 8px rgba(255, 255, 255, 1);
+    margin-right:10%; 
+    margin-left:10%; 
+    font-size: 1.35em;
+    z-index: 1;
+}
+
+#heart1 {
+    position:relative;
+    max-width: 25%;
+    width:100%;
+    height:auto;
+    animation-name: heartPulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
 #stephenText1 {
     margin-left:4%;font-size: 
     $font-size-standard;
@@ -242,15 +271,12 @@ h3 {
     font-size: $font-size-standard;
 }
 
-#source{font-size: 0.5em;
-text-align: $centertext;}
-
-#skeleton {
-    max-width:100%;
-    width:100%;
-    height:$height-standard;
-    margin-top:15%;
+#source {
+font-size: 0.5em;
+text-align: $centertext;
 }
+
+
 
 .redWords {
     color:rgb(143, 10, 10);
@@ -418,11 +444,13 @@ footer{
     footer {font-size: 0.7em;}
 
     /*Index.html*/
-    .welcomeText {margin-left:4%; margin-right:4%;}
+    .welcomeText {margin-left:6%; margin-right:6%; font-size: $font-size-standard;}
     #member{ width: 50%; font-size: 1em;padding:1%;}
     .memberText {font-size: 0.8em;}
     #member:hover {width: 50%;font-size: 1em; padding:2%;}
     #memberMessage {width:150px; height:75px; font-size: 1.1em; margin-top:20px;}
+    #chat {width:60%; text-align: center; margin-left: $margin-l; margin-right: $margin-r;font-size: 1.1em;}
+    #chat:hover {font-size: $font-size-standard;}
 
     /*Author.html*/
     #stephenText1 {font-size: 1em;}
