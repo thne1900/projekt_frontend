@@ -26,6 +26,21 @@ body{
     margin-left: $margin-l;
 }
 
+#colorScheme {
+    font-family: $font-stack; 
+    text-shadow: 4px 4px 8px rgb(0,0,0,0.70); 
+    border: 2px white solid; 
+    background-color:black; 
+    color:$secondary-color;
+    margin-left:2%;
+}
+
+#colorScheme:hover {
+    padding:0.5%;
+    cursor: pointer;
+    border:4px white solid;
+}
+
 /*The website logotype with design*/
 #logo {position:absolute;
     top:5%;

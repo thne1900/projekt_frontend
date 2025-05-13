@@ -1,0 +1,61 @@
+/*Variables för the light colorscheme*/
+
+$body-light:lighten(red, 6%);
+$text-lightB:black;
+$text-lightW:white;
+$nav-light:darken(white, 10%);
+$nav-a-light: lighten(grey, 30%);
+$footer-light: lighten(grey, 40%);
+
+/*The elements that change color in light theme*/
+body.light-theme {
+    background-color:$body-light;
+    color: $text-lightB;
+}
+body.light-theme #logo {
+    border: 4px solid $nav-light;
+}
+body.light-theme nav ul {
+    background-color:$nav-light;
+}
+body.light-theme nav a {
+    background-color: $nav-a-light;
+}
+body.light-theme nav a:hover {
+    background-color:$body-light;
+    color:$text-lightW;
+    border: 8px solid $nav-a-light;
+}
+body.light-theme nav ul li a.active {
+    background-color: $body-light;
+}
+body.light-theme .welcomeText {
+    color: $text-lightW;
+}
+body.light-theme #member:hover {
+    background-color: $body-light;
+}
+body.light-theme .memberText {
+    color:$text-lightW;
+}
+body.light-theme .books-title {
+    color:$text-lightW;
+}
+body.light-theme .redWords {
+    color:$text-lightW;
+}
+body.light-theme .firstWords {
+    color:$text-lightW;
+}
+body.light-theme #redText {
+    color:$text-lightW;
+}
+body.light-theme fieldset {
+    border: 8px solid $text-lightW;
+}
+body.light-theme legend {
+    color: $text-lightW;
+}
+body.light-theme footer {
+    background-color:$footer-light;
+}
