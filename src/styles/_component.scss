@@ -1,3 +1,5 @@
+/*Mixins on text elements*/
+
 @mixin spookyText($size, $shadowT, $shadowB, $colorT, $colorB) {
     
     font-size: $size;

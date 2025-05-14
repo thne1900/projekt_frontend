@@ -29,6 +29,12 @@ body.light-theme nav a:hover {
 body.light-theme nav ul li a.active {
     background-color: $body-light;
 }
+body.light-theme h1 {
+    background-color: $text-lightW; 
+    color: $text-lightB;
+    text-shadow:8px 8px 10px rgb(0,0,0,0.5); 
+    box-shadow: 4px 4px 8px rgb(0,0,0,0.7);
+ }
 body.light-theme .welcomeText {
     color: $text-lightW;
 }
@@ -56,16 +62,10 @@ body.light-theme fieldset {
 body.light-theme legend {
     color: $text-lightW;
 }
-body.light-theme footer {
-    background-color:$footer-light;
-}
-body.light-theme h1 {
-    background-color: $text-lightW; 
-    color: $text-lightB;
-    text-shadow:8px 8px 10px rgb(0,0,0,0.5); 
-    box-shadow: 4px 4px 8px rgb(0,0,0,0.7);
- }
 body.light-theme .visit {
     background-color: $body-light;
     box-shadow: 4px 4px 8px rgb(0,0,0,0.7);
+}
+body.light-theme footer {
+    background-color:$footer-light;
 }

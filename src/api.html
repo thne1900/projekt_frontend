@@ -3,20 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Stephen Kings bokverk tillsammans med deras filmatieringar."><!--keywords for search engines-->
+<meta name="description" content="Stephen Kings bokverk tillsammans med deras filmatiseringar."><!--keywords for search engines-->
 <link rel="stylesheet" href="styles/main.scss"><!--Link to the page's scss file-->
+<script src="js/main.js" type="module"></script><!--Linked javascript files-->
+<script src="js/linksActive.js" type="module"></script>
+<script src="js/colorScheme.js" type="module"></script>
 <script src="https://kit.fontawesome.com/321c3d6291.js" crossorigin="anonymous"></script><!--Downloaded font awesome icons-->
 <style>@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');</style><!--Import Google Fonts-->
 <title>Böcker & Filmer</title>
-<script src="js/main.js" type="module"></script><!--Linked javascript file-->
-<script src="js/linksActive.js" type="module"></script><!--Linked javascript file-->
-<script src="js/colorScheme.js" type="module"></script><!--Linked javascript file-->
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"><!--Favicon-->
 <link rel="icon" type="image/ico" href="images/favicon.ico">
 </head>
+
 <body>
     <header>
-    <a href="index.html"><img src="images/loggo.png" class="desktop-logo" id="logo" alt="Svart/vit bild med två händer"></a><!--Logotype-->
+    <a href="index.html"><img src="images/loggo.png" id="logo" alt="Svart/vit bild med två händer"></a><!--Logotype-->
     <picture><!--Header-img-->
         <source srcset="images/header.jpg?as=avif&width=1512" type="image/avif">
         <source srcset="images/header.jpg?as=webp&width=1512" type="image/webp">
@@ -39,7 +40,8 @@
     <li><a href="about.html" class="linkAct"> OM OSS</a></li>
     </ul>
     </nav>
-    <button id="colorScheme">Ändra färgtema</button>
+
+    <button id="colorScheme">Ändra färgtema</button><!--Change color-button-->
 <div class="grid-container">
 
     <div id="img-blood1">
@@ -49,7 +51,6 @@
             <img src="images/blood-15492_256.gif?width=256" alt="Röda bloddroppar som droppar" id="blood1">
         </picture>
         </div>
-
         <div id="img-blood2">
             <picture><!---img-->
                 <source srcset="images/blood-15492_256.gif?as=webp&width=256" type="image/webp">
@@ -73,7 +74,7 @@
 <h4 class="books-title">Carrie</h4>
 <p><span class="firstWords">Carrie är en tjej</span> som är lite udda. Hon bär speciella kläder, är lite klumpig och har därför blivit utsatt för mobbing.
 Men hon har egenskaper som ingen annan besitter, då hon kan låsa dörrar och krossa speglar när hon går in i koncentration. 
-Men då hennes mor är djupt troende måste denna förmågan döljas. Efter ett skämt på skolan bal kan hon inte längre tygla sin kraft och
+Men då hennes mor är djupt troende måste denna förmågan döljas. Efter ett skämt på skolans bal kan hon inte längre tygla sin kraft och
 det blir ett tumult för alla som är närvarande.</p>
 <br>
 <h4 class="books-title">Salem`s Lot</h4>
@@ -91,7 +92,7 @@ Men snart börjar hans son Danny uppleva konstiga saker och hotellet har snart f
 <h4 class="books-title">The Stand</h4>
 <p><span class="firstWords">En stark influensa</span> bryter ut i USA. Sjukdomen sprids snabbt och sjukdomsförloppet 
 är hemskt. Städer drabbas av många dödsfall och det blir kaotiskt i landet. Men det visar sig att vissa trots detta är 
-immuna mot viruset och snart börjar de som inte viruset biter på att sammarbeta. 
+immuna mot viruset och snart börjar de som inte viruset biter på, att sammarbeta. 
 Men ändå bildas det i denna sjukdomstid två läger, de goda mot de onda.</p>
 <br>
 <br>
@@ -109,11 +110,11 @@ När familjen drabbas av en tragedi och kallar på de onda, får de ångra sitt 
 <br>
 <h4 class="books-title">It</h4>
 <p><span class="firstWords">I den lilla staden Derry, </span> långt ner i kloakerna, lurar något mystiskt- något ondskefullt. 
-Det som kallas Det. Ett gäng kompisar har tillsammans försökt att trotsa Det fär att med gemensamma krafter slå hål på 
+Det som kallas Det. Ett gäng kompisar har tillsammans försökt att trotsa Det för att med gemensamma krafter slå hål på 
 ondskan och driva Det tillbaka. Kompisgänget har lovat varandra att stå emot om Det kommer tillbaka igen. </p> 
 <br>
 <h4 class="books-title">Gerald`s Game</h4>
-<p><span class="firstWords">Ett spel mellan två personer</span> som urartar och detta sker långt ifån andra människor i ett ödsligt hus. 
+<p><span class="firstWords">Ett spel mellan två personer</span> som urartar och detta sker långt ifån andra människor, i ett ödsligt hus. 
 En man och en hustru ska leka en lek, men leken går inte som tänkt. 
 Mannen dör och hustrun sitter fast utan att någon kan höra henne skrika om att hon är i behov av hjälp. 
 Hon blir ensam med sina tankar och de smyger längre och längre inpå hennes ensamhet.</p>
@@ -128,11 +129,11 @@ Han börjar också uppfatta sin snälla vän från en annan sida och staden är 
 <h4 class="books-title">Blaze</h4> 
 <p><span class="firstWords">Bakom mannen Clayton</span> finns det en plan, men ingen aning om hur denna ska slå in. 
 Med fler hjärnhalvor tillsammans med hans kropp skulle en kidnappning av ett spädbarn genomföras. 
-Men hur väl har detta planerats, när han plötsligt springer in i en skog med det kidnappade spädbarnet och en kapplöpning mot tiden har precis börjat. </p>
+Men hur väl har detta planerats? När han plötsligt springer in i en skog med det kidnappade spädbarnet och en kapplöpning mot tiden har precis börjat. </p>
 <br>
 <h4 class="books-title">Doctor Sleep</h4>
 <p><span class="firstWords">En pojke lyckades fly</span> från sin besatta pappa för 36 år sedan (The Shining).
-Pojken Danny får nu i vuxenålder efter en kämpig uppväxt, en arbete på ett sjukhem som vårdare. 
+Pojken Danny får nu i vuxen ålder efter en kämpig uppväxt, ett arbete på ett sjukhem som vårdare. 
 Han kan med sin synska förmåga, trösta och lugna de patienter som inte har långt kvar. Patienterna kom att kalla Danny för Doktor Sömn. 
 Snart verkar han få telepatisk kontakt med en flicka som behöver hjälp. Han dras då in i en skrämmande jakt som leder tillbaka i tiden.</p>
 <br>
@@ -163,9 +164,10 @@ När han ska hjälpa polisen i sitt sökande efter en mödare, verkar priset bli
 <footer class="footer3"><!--The footer-->
 <p class="visit"><i class="fa-solid fa-eye"></i> Besök gärna våra sociala medier:</p>
 <div class="footer-icons"><i class="fa-brands fa-facebook"></i>&nbsp;<i class="fa-brands fa-instagram"></i></div>
-<p><strong>Kontaktuppgifter:</strong>
+<p><u>Kontaktuppgifter:</ul>
 <p><i class="fa-solid fa-envelope"></i> Email:</strong> <a href="mailto:thne1900@student.miun.se">skrackens.sallskap@hotmail.com</a></p>
 <p>© Copyright 2025 • Skräckens Sällskap.</p>  
 </footer>
+</div>
 </body>
 </html>

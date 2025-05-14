@@ -1,11 +1,14 @@
 /*Created variables*/
 $font-stack:"Amarante", serif;
 $bg-color:rgba(44, 42, 42, 1);
+$bg-colorEl:black;
 $bg-color-nav:rgba(177, 22, 32, 1);
 $bg-color-a:rgba(255, 255, 255, 1);
 $primary-color:rgba(30, 30, 30, 1);
 $secondary-color:rgba(255, 255, 255, 1);
 $dark-color:darken(rgba(177, 22, 32, 1), 8%);
+$colorEl:red;
+$colorRed: rgb(143, 10, 10);
 $font-size-standard:1.2em;
 $linehight-standard:1.5;
 $centertext:center;
@@ -26,21 +29,6 @@ body{
     margin-left: $margin-l;
 }
 
-#colorScheme {
-    font-family: $font-stack; 
-    text-shadow: 4px 4px 8px rgb(0,0,0,0.70); 
-    border: 2px white solid; 
-    background-color:black; 
-    color:$secondary-color;
-    margin-left:2%;
-}
-
-#colorScheme:hover {
-    padding:0.5%;
-    cursor: pointer;
-    border:4px white solid;
-}
-
 /*The website logotype with design*/
 #logo {position:absolute;
     top:5%;
@@ -50,7 +38,6 @@ body{
     width:8%;
     height:$height-standard;
 }
-
 #logo:hover {
     border:8px solid black;
     width:8.5%;
@@ -102,7 +89,6 @@ nav {
     background-color: $bg-color-nav;
     margin:8px;
 }
-
 /*Design on hover on the menu.*/
 nav ul li a:hover{
     background-color: $bg-color-nav; 
@@ -112,30 +98,95 @@ nav ul li a:hover{
     cursor: pointer;
     text-shadow: 10px 10px 12px rgb(252, 251, 251);
 }
-
 /*Background color- the active pages.*/
 nav ul li a.active {
     background-color:$bg-color-nav;
 }
 
+/*Design on the button (change color)*/
+#colorScheme {
+    font-family: $font-stack; 
+    text-shadow: 4px 4px 8px rgb(0,0,0,0.70); 
+    border: 2px white solid; 
+    background-color:$bg-colorEl; 
+    color:$secondary-color;
+    margin-left:2%;
+}
+#colorScheme:hover {
+    padding:0.5%;
+    cursor: pointer;
+    border:4px white solid;
+}
+
+/*Animation on the picture spider.*/
+#spider {
+    position:absolute;
+    width:256px;
+    height: 177px;
+    background-image: url('../images/spider-18883_256.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: spiderCrawl;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-duration: linear;
+}
+
+/*Blood images and its design.*/
+#img-blood1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img-blood2 {
+    @extend#img-blood1;
+}
+#blood1{
+    width: 100%;
+    height:$height-standard;
+}
+#blood2{
+    @extend#blood1;
+}
+
+/*Design on headlines*/
 h1 {
     text-align: $centertext;
-    
 }
-
-h2 {
+h2 {@extend h1;
     font-size: 1.5em;
-    text-align: $centertext;
     text-shadow: 10px 10px 12px rgb(248, 244, 244);
 }
-
 h3 {
-    text-align: $centertext;
+    @extend h1;
 }
+
+/*Design on elements of index.html*/
 
 .welcomeText {
     text-align: $centertext;
+    color: $colorRed;
+    text-shadow: 5px 5px 8px rgba(255, 255, 255, 1);
+    margin-right:2%; 
+    margin-left:2%; 
+    font-size: 1.35em;
+    z-index: 1;
 }
+
+/*Skeleton gif behind the text with its design.*/
+#skeleton {
+    max-width:100%;
+    width:100%;
+    height:$height-standard;
+    margin-top:10%;
+}
+#img-skeleton {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
 /*Design of the membership button.*/
 #member {
     background-color: $secondary-color;
@@ -168,7 +219,7 @@ h3 {
     font-style: italic;
 }
 #memberMessage {
-    background-color: black;
+    background-color: $bg-colorEl;
     box-shadow: 5px 5px 9px rgba(255, 255, 255, 1);
     width: 350px;
     height:50px;
@@ -178,17 +229,17 @@ h3 {
     padding:10%;
     font-size: 1.5em;
     border:4px solid white;
-    color:red;
+    color:$colorEl;
     z-index: 1;
 }
+
 #chat{
-    background-color:black;
+    background-color:$bg-colorEl;
     color: $secondary-color;
     text-align: $centertext;
     padding:2%;
     box-shadow: 5px 5px 9px rgba(255, 255, 255, 1);
 }
-
 #chat:hover {
     cursor: pointer;
     padding:4%;
@@ -197,22 +248,7 @@ h3 {
     border:4px white solid;
 }
 
-/*Animation on the picture spider.*/
-#spider {
-    position:absolute;
-    width:256px;
-    height: 177px;
-    background-image: url('../images/spider-18883_256.gif');
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation-name: spiderCrawl;
-    animation-duration: 10s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-duration: linear;
-}
-
-/*Design of website images.*/
+/*Design of website image-doll.*/
 #img-doll1 {
     display: flex;
     justify-content: center;
@@ -225,41 +261,9 @@ h3 {
     height:$height-standard;
     }
 
-#img-blood1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#img-blood2 {
-    @extend#img-blood1;
-}
-#blood1{
-    width: 100%;
-    height:$height-standard;
-}
-#blood2{
-    @extend#blood1;
-}
+/*Design on elements of author.html*/
 
-#skeleton {
-    max-width:100%;
-    width:100%;
-    height:$height-standard;
-    margin-top:15%;
-}
-
-#img-skeleton {
-    display: flex; justify-content: center;align-items: center;
-}
-
-.welcomeText {
-    color: $dark-color;text-shadow: 5px 5px 8px rgba(255, 255, 255, 1);
-    margin-right:10%; 
-    margin-left:10%; 
-    font-size: 1.35em;
-    z-index: 1;
-}
-
+/*Image with animation*/
 #heart1 {
     position:relative;
     max-width: 25%;
@@ -270,9 +274,10 @@ h3 {
     animation-iteration-count: infinite;
 }
 
+/*Text layout*/
 #stephenText1 {
-    margin-left:4%;font-size: 
-    $font-size-standard;
+    margin-left:4%;
+    font-size: $font-size-standard;
 }
 #stephenText2 {
     @extend#stephenText1;
@@ -285,72 +290,77 @@ h3 {
     font-size: $font-size-standard;
 }
 
+/*The source of the text*/
 #source {
 font-size: 0.5em;
 text-align: $centertext;
 }
 
-
-
 .redWords {
-    color:rgb(143, 10, 10);
+    color:$colorRed;
     font-size: $font-size-standard;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgb(251, 247, 247);
 }
 
-#chart {margin-top: 15%;
+/*Design on elements of api.html*/
+
+/*Diagrams (with apexcharts) for the books.*/
+#chart {
+    margin-top:15%;
     width:500px;
     height:$height-standard;
 }
 
+/*The design of the book list*/
 #books-list {
     font-size: $font-size-standard;
-    text-align: center;
+    text-align: $centertext;
     list-style: none;
 }
-
 .books-info {
     margin-right:4%; 
     font-size: 1em;
 }
-
 #books-resp {
     display:none;
 }
-
 .books-title {
     display:none;
 }
-
 .firstWords {
     color: #CA2B03;
     font-size:1.3em;
     text-shadow: 4px 4px 8px rgba(0,0,0,0.70);
 }
 
+/*Design on elements of about.html*/
+
+/*The design of text elements.*/
 .aboutText {
-    text-align: center; 
+    text-align: $centertext; 
     margin-right:20%; 
     margin-left:20%;
 }
 #extraP {
-    text-align: center;
+    text-align: $centertext;
 }
 #redText {
-    color:$bg-color-nav; 
+    color:$colorRed; 
     font-size: 1.3em;
 }
 
-form {width:80%;
-     height:$height-standard;
-     margin-bottom: 4%;
-    }
+/*Design of the contact form.*/
+form {
+    width:80%;
+    height:$height-standard;
+    margin-bottom: 4%;
+}
 fieldset {
     border: 8px grey solid;
 }
 legend {
-    text-align: center; 
+    text-align: $centertext; 
     font-size: 1.4em;
 }
 input {
@@ -359,13 +369,11 @@ input {
 }
 input::placeholder {
     font-weight: bold;
-    color:red; 
+    color:$colorEl; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 textarea::placeholder{
-    color:red;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    @extend input, ::placeholder;  
 }
 #send {
     width:30%;
@@ -381,8 +389,9 @@ textarea::placeholder{
     text-shadow: 6px 6px 10px rgba(177, 22, 32, 0.8);
 }
 #creators {
-    text-align: center;
+    text-align:$centertext;
     margin-left:8%;
+    margin-bottom: 4%;
 }
 
 /*Footer design and content.*/
@@ -407,7 +416,6 @@ footer{
     text-shadow: 8px 8px 10px rgb(0,0,0,0.5); 
 }
 
-
 /*Media rules for smaller screens, with breakpoints at 1024 and 600px.*/
 @media (max-width:1024px) {
     /*For all html-pages*/
@@ -420,8 +428,8 @@ footer{
     nav ul li a:hover{padding:20px;}
 
     /*Index.html*/
-    .welcomeText {margin-left:10%; margin-right:10%;}
-    .memberText {margin-left:10%; margin-right:10%;}
+    .welcomeText {margin-left:15%; margin-right:15%;}
+    .memberText {margin-left:15%; margin-right:15%;}
     #member {width:80%; font-size: 1.1em; padding:1.5%;}
     #member:hover {width:80%;font-size: 1em; padding:3%;}
     #memberMessage {width:220px; height:50px; font-size: $font-size-standard; margin-top:10px;}
@@ -435,14 +443,13 @@ footer{
 
     /*Api.html*/
     #books-list {margin-left:4%; margin-right:4%;font-size: 1.1em;}
-    .books-info {font-size: 1em; margin-left:8%; margin-right:8%; text-align: center;}
+    .books-info {font-size: 1em; margin-left:8%; margin-right:8%; text-align: $centertext;}
     #books-resp {display:inline; text-shadow: 8px 8px 10px rgb(248, 244, 244);}
-    .books-title {display: inline; font-size: 1.4em; margin-bottom: 0.1%; color:#CA2B03; text-shadow: 8px 8px 10px rgb(248, 244, 244); text-align: center;}
+    .books-title {display: inline; font-size: 1.4em; margin-bottom: 0.1%; color:#CA2B03; text-shadow: 8px 8px 10px rgb(248, 244, 244); text-align:$centertext;}
 
     /*About.html*/
     #creators {margin-left:4%; margin-right:4%; border: 8px grey solid; padding:2%; margin-bottom: 4%;}
     form {margin-left:$margin-l; margin-right:$margin-r; width:60%; margin-bottom: 4%;}
-
 }
 
 @media (max-width:600px) {
@@ -464,7 +471,7 @@ footer{
     .memberText {font-size: 0.8em;}
     #member:hover {width: 50%;font-size: 1em; padding:2%;}
     #memberMessage {width:150px; height:75px; font-size: 1.1em; margin-top:20px;}
-    #chat {width:60%; text-align: center; margin-left: $margin-l; margin-right: $margin-r;font-size: 1.1em;}
+    #chat {width:60%; text-align: $centertext; margin-left: $margin-l; margin-right: $margin-r;font-size: 1.1em;}
     #chat:hover {font-size: $font-size-standard;}
 
     /*Author.html*/
