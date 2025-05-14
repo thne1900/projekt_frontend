@@ -119,9 +119,8 @@ nav ul li a.active {
 }
 
 h1 {
-    font-size: 2.5em;
     text-align: $centertext;
-    text-shadow: 10px 10px 12px rgb(248, 244, 244);
+    
 }
 
 h2 {
@@ -387,9 +386,10 @@ textarea::placeholder{
 }
 
 /*Footer design and content.*/
-#visit{
-    font-size: 1.3em;
-    text-shadow: 10px 10px 12px rgb(0,0,0,0.70); 
+.visit{
+    animation-name: shakeText;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
 }
 
 .footer-icons {
@@ -447,7 +447,7 @@ footer{
 
 @media (max-width:600px) {
     /*For all html-pages*/
-    h1 {font-size: 1.8em;}
+    h1 {font-size: 1.8em; margin-left: 4%; margin-right: 4%;}
     h2 {font-size: $font-size-standard;}
     nav ul li a:hover{padding:15px;}
     .menu-ham{display:flex;}

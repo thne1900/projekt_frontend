@@ -59,3 +59,13 @@ body.light-theme legend {
 body.light-theme footer {
     background-color:$footer-light;
 }
+body.light-theme h1 {
+    background-color: $text-lightW; 
+    color: $text-lightB;
+    text-shadow:8px 8px 10px rgb(0,0,0,0.5); 
+    box-shadow: 4px 4px 8px rgb(0,0,0,0.7);
+ }
+body.light-theme .visit {
+    background-color: $body-light;
+    box-shadow: 4px 4px 8px rgb(0,0,0,0.7);
+}

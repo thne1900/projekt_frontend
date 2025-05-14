@@ -1,0 +1,26 @@
+@mixin spookyText($size, $shadowT, $shadowB, $colorT, $colorB) {
+    
+    font-size: $size;
+    text-shadow: $shadowT;
+    box-shadow: $shadowB;
+    color: $colorT;
+    background-color: $colorB;
+}
+
+h1 {
+    @include spookyText(2.5em, 10px 10px 12px rgb(252, 251, 251), 6px 6px 10px rgba(251, 1, 1, 0.5), white, black);
+}
+
+@mixin spookyFooter ($sizeF, $shadowF, $bgColor, $padding, $marginL, $marginR, $bgShadow){
+    font-size: $sizeF;
+    text-shadow: $shadowF;
+    background-color: $bgColor;
+    padding: $padding;
+    margin-left: $marginL;
+    margin-right:$marginR;
+    box-shadow: $bgShadow;
+}
+
+.visit {
+    @include spookyFooter(1.4em, 6px 6px 10px rgb(252, 251, 251), black, 1.5%, 15%, 15%, 4px 4px 8px rgba(251, 247, 247, 0.7));
+}
