@@ -74,6 +74,7 @@ nav {
                     font-size: $font-size-standard;
                     text-shadow: 10px 10px 12px rgb(0,0,0,0.70); 
                     text-decoration: none;
+                    transition: 0.3s ease;
                 }
         }
 }
@@ -101,6 +102,8 @@ nav ul li a:hover{
 /*Background color- the active pages.*/
 nav ul li a.active {
     background-color:$bg-color-nav;
+    border: 8px black solid;
+    padding:22px; 
 }
 
 /*Design on the button (change color)*/
@@ -111,6 +114,7 @@ nav ul li a.active {
     background-color:$bg-colorEl; 
     color:$secondary-color;
     margin-left:2%;
+    transition: 0.2s ease;
 }
 #colorScheme:hover {
     padding:0.5%;
@@ -131,6 +135,18 @@ nav ul li a.active {
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-duration: linear;
+}
+#bird {margin-top: 6%;
+    position:absolute;
+    width:256px;
+    height: 256px;
+    background-image: url('../images/walking-11968_256.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    animation-name: birdWalking;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
 }
 
 /*Blood images and its design.*/
@@ -203,6 +219,7 @@ h3 {
     animation-name: memberPulse;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
+    transition: 0.3s ease;
 }
 #member:hover {
     background-color: $bg-color-nav;
@@ -239,6 +256,7 @@ h3 {
     text-align: $centertext;
     padding:2%;
     box-shadow: 5px 5px 9px rgba(255, 255, 255, 1);
+    transition: 0.2s ease;
 }
 #chat:hover {
     cursor: pointer;
@@ -259,6 +277,14 @@ h3 {
     max-width:100%;
     width:100%;
     height:$height-standard;
+    transition: 0.3 ease;
+    filter:grayscale(65%);
+    }
+
+#doll:hover {
+        opacity: 0.7;
+        cursor: pointer;
+        filter:hue-rotate(320deg);
     }
 
 /*Design on elements of author.html*/
@@ -348,6 +374,26 @@ text-align: $centertext;
 #redText {
     color:$colorRed; 
     font-size: 1.3em;
+    text-shadow: 2px 2px 4px rgb(251, 247, 247);
+}
+
+#img-skulls {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skulls {
+    max-width:100%;
+    width:100%;
+    height:$height-standard;
+    transition: 0.4s ease;
+}
+
+#skulls:hover {
+    opacity: 0.6;
+    filter: grayscale(50%);
+    cursor: pointer;
 }
 
 /*Design of the contact form.*/
@@ -449,6 +495,7 @@ footer{
 
     /*About.html*/
     #creators {margin-left:4%; margin-right:4%; border: 8px grey solid; padding:2%; margin-bottom: 4%;}
+    #img-skulls {margin-top:4%;}
     form {margin-left:$margin-l; margin-right:$margin-r; width:60%; margin-bottom: 4%;}
 }
 
@@ -464,6 +511,7 @@ footer{
     #visit {font-size: 1em;}
     .footer-icons {font-size: 30px;}
     footer {font-size: 0.7em;}
+    #bird {width:150px; height:150px;}
 
     /*Index.html*/
     .welcomeText {margin-left:6%; margin-right:6%; font-size: $font-size-standard;}
@@ -486,7 +534,7 @@ footer{
     #books-list {margin-left:10%; margin-right:10%;font-size: 1em;}
 
     /*About.html*/
-    form{width:60%;}
+    form{width:60%; margin-bottom: 6%;}
     textarea {width:95%;}
     legend {font-size: 1.3em;}
     #send {width:50%;}

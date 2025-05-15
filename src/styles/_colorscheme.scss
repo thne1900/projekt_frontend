@@ -28,6 +28,7 @@ body.light-theme nav a:hover {
 }
 body.light-theme nav ul li a.active {
     background-color: $body-light;
+    border: 8px $nav-a-light solid;
 }
 body.light-theme h1 {
     background-color: $text-lightW; 
