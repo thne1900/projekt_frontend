@@ -24,12 +24,7 @@
 - Lade till en funktion för att kunna välja färgtema. Då ursprungstemat är mörkt med mörkar färger och nyanser, ska en besökare via en knapp kunna ändra färg till en ljusttema, om den så önskar. Därför skapades en js-fil (colorScheme.js) för knappen och dess funktion på växling och i SCSS filen (_colorscheme.scss) vilka ljusa färger som ska ändras. 
 - I filen _componens har ett par mixins skapats för text-element på webbplatsen.
 - Har gått igenom de html och SCSS-filer som hittills skapats och kommenterat en del för att förtydliga vad de innehåller.  
-
-
-
-
-
-
+- Lade till ytterligare en gif-bild med animation (fågeln i footern) och fyllde ut med en dödskallebild på sista sidan med tillagda effekter.  
 
 
 
@@ -44,3 +39,4 @@
 - https://pixabay.com/sv/gifs/spindel-insekt-arachnid-kuslig-18883/ (2025-04-30)
 - https://pixabay.com/sv/gifs/skelett-skalle-halloween-ben-13967/ (2025-04-30)
 - https://pixabay.com/sv/illustrations/hj%C3%A4rta-sjuksk%C3%B6terska-h%C3%A4lsa-5079717/ (2025-05-02)
+- https://pixabay.com/sv/gifs/g%C3%A5ende-gala-pixel-f%C3%A5gel-m%C3%B6rk-11968/ (2025-05-15)
