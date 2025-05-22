@@ -14,4 +14,14 @@
         }, 2000);
     });
 
-  
+    let chatButton=document.getElementById("chat");
+    let chatMessage=document.getElementById("chatMessage");
+
+    chatButton.addEventListener("click",()=> {
+        chatMessage.style.display="block";
+
+        setTimeout(()=>{
+            chatMessage.style.display="none";
+
+        }, 2000);
+    });
