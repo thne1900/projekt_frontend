@@ -1,13 +1,24 @@
 "use strict";
 
+/**
+ * @type {array} En tom array, där datan kan lagras. 
+ */
 let books=[];
 
+/** 
+ * @funktion window onload, vid sinladdning inhämtas böckernas data. 
+ * */
 window.onload=()=>{
     getBooks();
-  
 }
+/**
+ * @type {string} En url till API:et för att kunna inhämta böckerna.
+ */
 let url="https://stephen-king-api.onrender.com/api/books";
 
+/**
+ * @async funktion, som via API:et ska inhämta och visa filtrerade böcker. Eventuell fel vid inhämtningen ger felmeddelanden.
+ */
 async function getBooks() {
     try {
         const response=await fetch(url);
@@ -32,6 +43,10 @@ let booksToDisplay=[1,2,3,5,10,14,19,27,29,46,52,55,60,61,62];
     console.error("Gick inte att hämta böckerna", error);
 }  
 
+/**
+ * @param {object[]} books Visar array med bokobjekten.
+ * Får en visad lista på webbplatsen (DOM).
+ */
 
 function displayBooks(books) {
 

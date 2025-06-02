@@ -135,8 +135,11 @@ nav ul li a.active {
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    pointer-events: none;
 }
-#bird {margin-top: 6%;
+
+#bird {
+    margin-top: 6%;
     position:absolute;
     width:256px;
     height: 256px;
@@ -252,8 +255,9 @@ h3 {
     margin-left: $margin-l;
     margin-right: $margin-r;
 }
-
-#chat{font-family: $font-stack;
+/*Design of the chat button.*/
+#chat{
+    font-family: $font-stack;
     font-size: $font-size-standard;
     background-color:$bg-colorEl;
     color: $secondary-color;
@@ -269,12 +273,10 @@ h3 {
     color:$bg-color-nav;
     border:4px white solid;
 }
-
 #chatMessage {
     @extend#memberMessage;
     font-size: $font-size-standard;
     margin-top: 0;
-    
 }
 
 /*Design of website image-doll.*/
@@ -290,8 +292,7 @@ h3 {
     height:$height-standard;
     transition: 0.3 ease;
     filter:grayscale(65%);
-    }
-
+}
 #doll:hover {
         opacity: 0.7;
         cursor: pointer;
@@ -341,14 +342,14 @@ text-align: $centertext;
     text-shadow: 2px 2px 4px rgb(251, 247, 247);
 }
 
-/*Design on elements of api.html*/
-
 /*Diagrams (with apexcharts) for the books.*/
 #chart {
     margin-top:15%;
     width:500px;
     height:$height-standard;
 }
+
+/*Design on elements of api.html*/
 
 /*The design of the book list*/
 #books-list {
@@ -379,6 +380,7 @@ text-align: $centertext;
     text-align: $centertext; 
     margin-right:20%; 
     margin-left:20%;
+    line-height: 1.6;
 }
 #extraP {
     text-align: $centertext;
@@ -389,19 +391,18 @@ text-align: $centertext;
     text-shadow: 2px 2px 4px rgb(251, 247, 247);
 }
 
+/*Skulls image*/
 #img-skulls {
     display:flex;
     justify-content: center;
     align-items: center;
 }
-
 #skulls {
     max-width:100%;
     width:100%;
     height:$height-standard;
     transition: 0.4s ease;
 }
-
 #skulls:hover {
     opacity: 0.6;
     filter: grayscale(50%);
@@ -458,11 +459,9 @@ textarea::placeholder{
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
 }
-
 .footer-icons {
     font-size: 40px;
 }
-
 footer{
     border-top: 4px solid black;
     border-bottom: 4px solid black;
@@ -484,6 +483,7 @@ footer{
     nav {ul{flex-direction: column;display: none;background-color: $bg-color;}
     li {margin: 0.5%; a{padding: 10px;font-size: $font-size-standard;}}}
     nav ul li a:hover{padding:20px;}
+    #bird {width:175px; height:175px;}
 
     /*Index.html*/
     .welcomeText {margin-left:15%; margin-right:15%;}
@@ -491,6 +491,7 @@ footer{
     #member {width:80%; font-size: 1.1em; padding:1.5%;}
     #member:hover {width:80%;font-size: 1em; padding:3%;}
     #memberMessage {width:220px; height:50px; font-size: $font-size-standard; margin-top:10px;}
+    #chatMessage {width:250px; height:65px; margin-top: 0;}
 
     /*Author.html*/
     #stephenText1 {margin-left: 15%; margin-right:15%;}
@@ -524,15 +525,18 @@ footer{
     .footer-icons {font-size: 30px;}
     footer {font-size: 0.7em;}
     #bird {width:150px; height:150px;}
+    #spider {animation-name: spiderCrawlResp;}
 
     /*Index.html*/
     .welcomeText {margin-left:6%; margin-right:6%; font-size: $font-size-standard;}
     #member{ width: 50%; font-size: 1em;padding:1%;}
     .memberText {font-size: 0.8em;}
     #member:hover {width: 50%;font-size: 1em; padding:2%;}
-    #memberMessage {width:150px; height:75px; font-size: 1.1em; margin-top:20px;}
-    #chat {width:60%; text-align: $centertext; margin-left: $margin-l; margin-right: $margin-r;font-size: 1.1em;}
-    #chat:hover {font-size: $font-size-standard;}
+    #memberMessage {width:180px; height:40px; font-size: 1.1em; margin-top:20px;}
+    #chat {width:65%; text-align: $centertext; margin-left: $margin-l; margin-right: $margin-r;font-size: 1.1em;}
+    #chat:hover {font-size: 1.1em;}
+    #chatMessage {width:300px; height:25px; margin-top: 0; padding:6%;}
+    #doll {margin-top: 8%;}
 
     /*Author.html*/
     #stephenText1 {font-size: 1em;}
