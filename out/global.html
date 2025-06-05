@@ -98,13 +98,13 @@
 
         
             
-<h4 class="name" id="books"><span class="type-signature"></span>books<span class="type-signature"> :Array</span></h4>
+<h4 class="name" id="chart"><span class="type-signature"></span>chart<span class="type-signature"> :ApexCharts</span></h4>
 
 
 
 
 <div class="description">
-    En tom array, där datan kan lagras.
+    Renderar och utformar diagrammet i elementet på HTML-dokumentet (#chart).
 </div>
 
 
@@ -113,7 +113,7 @@
     <ul>
         <li>
             
-<span class="param-type">Array</span>
+<span class="param-type">ApexCharts</span>
 
 
         </li>
@@ -152,7 +152,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="main.js.html">main.js</a>, <a href="main.js.html#line8">line 8</a>
+        <a href="apexcharts.js.html">apexcharts.js</a>, <a href="apexcharts.js.html#line91">line 91</a>
     </li></ul></dd>
     
 
@@ -170,13 +170,13 @@
 
         
             
-<h4 class="name" id="url"><span class="type-signature"></span>url<span class="type-signature"> :string</span></h4>
+<h4 class="name" id="option"><span class="type-signature"></span>option<span class="type-signature"> :object</span></h4>
 
 
 
 
 <div class="description">
-    En url till API:et för att kunna inhämta böckerna.
+    Skapande av ett stapeldiagram med Apexcharts.
 </div>
 
 
@@ -185,7 +185,7 @@
     <ul>
         <li>
             
-<span class="param-type">string</span>
+<span class="param-type">object</span>
 
 
         </li>
@@ -224,7 +224,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="main.js.html">main.js</a>, <a href="main.js.html#line21">line 21</a>
+        <a href="apexcharts.js.html">apexcharts.js</a>, <a href="apexcharts.js.html#line8">line 8</a>
     </li></ul></dd>
     
 
@@ -243,316 +243,6 @@
         
     
 
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="getBooks-H%C3%A4mtarde%C3%B6nskadeb%C3%B6ckerna."><span class="type-signature">(async) </span>getBooks - Hämtar de önskade böckerna.<span class="signature">()</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Genom en asynkron funktion inhämtas de filtrerade böckerna via API:et och visas på webbplatsen.
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="main.js.html">main.js</a>, <a href="main.js.html#line23">line 23</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Throws:</h5>
-
-        
-
-<dl>
-    <dt>
-        <div class="param-desc">
-        - Eventuell fel vid inhämtningen ger felmeddelande.
-        </div>
-    </dt>
-    <dd></dd>
-    <dt>
-        <dl>
-            <dt>
-                Type
-            </dt>
-            <dd>
-                
-<span class="param-type">Error</span>
-
-
-            </dd>
-        </dl>
-    </dt>
-    <dd></dd>
-</dl>
-
-
-    
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="getMovie"><span class="type-signature">(async) </span>getMovie<span class="signature">(title, movieText)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Med asynkron funktion inhämtar filmens info utifrån bokens titel.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>title</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Titel på bok för att nå filmen med samma namn.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>movieText</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">HTMLElement</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Ett div-element som visar info om filmen.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="main.js.html">main.js</a>, <a href="main.js.html#line128">line 128</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Throws:</h5>
-
-        
-
-<dl>
-    <dt>
-        <div class="param-desc">
-        - Ger felmeddelande om inhämtningen av filmdata misslyckas.
-        </div>
-    </dt>
-    <dd></dd>
-    <dt>
-        <dl>
-            <dt>
-                Type
-            </dt>
-            <dd>
-                
-<span class="param-type">Error</span>
-
-
-            </dd>
-        </dl>
-    </dt>
-    <dd></dd>
-</dl>
-
-
-    
-
-
-
-
-
-
-
-        
     
 
     
@@ -568,13 +258,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#books">books</a></li><li><a href="global.html#getBooks-H%25C3%25A4mtarde%25C3%25B6nskadeb%25C3%25B6ckerna.">getBooks - Hämtar de önskade böckerna.</a></li><li><a href="global.html#getMovie">getMovie</a></li><li><a href="global.html#url">url</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#chart">chart</a></li><li><a href="global.html#option">option</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Thu Jun 05 2025 23:56:30 GMT+0200 (Central European Summer Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Fri Jun 06 2025 00:32:57 GMT+0200 (Central European Summer Time)
 </footer>
 
 <script> prettyPrint(); </script>
