@@ -39,12 +39,13 @@
 #### Kurs: DT211G Frontend-baserad webbutveckling.
 
 #### Källa:
--  https://stephen-king-api.onrender.com/ (2025-04-28).
--  https://www.omdbapi.com/ (2025-04-28).
--  https://stephenking.com/the-author/ (2025-05-02).
--  https://www.bokhavet.se/stephen-king-bocker/ (2025-05-05).
--  https://apexcharts.com/docs/creating-first-javascript-chart/ (2025-05-05).
--  https://apexcharts.com/docs/colors/ (2025-05-05).
+- https://stephen-king-api.onrender.com/ (2025-04-28).
+- https://www.omdbapi.com/ (2025-04-28).
+- https://stephenking.com/the-author/ (2025-05-02).
+- https://www.bokhavet.se/stephen-king-bocker/ (2025-05-05).
+- https://apexcharts.com/docs/creating-first-javascript-chart/ (2025-05-05).
+- https://apexcharts.com/docs/colors/ (2025-05-05).
+- https://jsdoc.app/ (2025-06-02).
 
 #### Källa (bilder):
 - https://pixabay.com/sv/gifs/halloween-skr%C3%A4ck-docka-skr%C3%A4mmande-8548/ (2025-04-30)

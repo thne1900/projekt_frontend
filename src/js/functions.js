@@ -1,4 +1,4 @@
-/*Javascript for message boxes that has a set display time.*/
+/*The message boxes for the member button and the chat button.*/
 
 "use strict";
 /**

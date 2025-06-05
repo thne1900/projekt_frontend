@@ -9,7 +9,7 @@ let books=[];
 
 /** 
  * Vid sidinladdning
- * @function window.onload - Inhämtas böckernas data med den anropade funktionen (getBooks). 
+ * @function window.onload - Inhämtar böckernas data med den anropade funktionen (getBooks). 
  * */
 window.onload=()=>{
     getBooks();
@@ -21,9 +21,10 @@ window.onload=()=>{
 let url="https://stephen-king-api.onrender.com/api/books";
 
 /**
- * Genom en asynkron funktion (getBooks) inhämtas de filtrerade böckerna via API:et.
+ * Genom en asynkron funktion inhämtas de filtrerade böckerna via API:et och visas på webbplatsen.
  * @async
- * @throws {error} - Eventuell fel vid inhämtningen ger felmeddelande.
+ * @function getBooks - Hämtar de önskade böckerna.
+ * @throws {Error} - Eventuell fel vid inhämtningen ger felmeddelande.
  */
 async function getBooks() {
     try {
@@ -39,11 +40,7 @@ let booksToDisplay=[1,2,3,5,10,14,19,27,29,46,52,55,60,61,62];
 
     let filteredBooks=books.filter(book=>booksToDisplay.includes(book.id));
 
-    /*console.table(filteredBooks);*/
-
     displayBooks(filteredBooks);
-
-/*console.table(books);*/
 
 } catch (error){
     console.error("Gick inte att hämta böckerna", error);
@@ -59,9 +56,7 @@ function displayBooks(books) {
 
     booksList.innerHTML="";
 
-
    books.forEach(book=>{
-        /*console.log(book);*/
 
         let list=document.createElement("li");
 
@@ -128,6 +123,7 @@ function toggleMovieText(movieText, title, movieButton) {
  * @param {string} title - Titel på bok för att nå filmen med samma namn.
  * @param {HTMLElement} movieText - Ett div-element som visar info om filmen.
  * @async
+ * @throws {Error} - Ger felmeddelande om inhämtningen av filmdata misslyckas.
  */
 async function getMovie(title, movieText){
 
