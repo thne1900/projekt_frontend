@@ -473,6 +473,10 @@ footer{
     text-shadow: 8px 8px 10px rgb(0,0,0,0.5); 
 }
 
+.jsdoc {
+    font-size: $font-size-standard;
+}
+
 /*Media rules for smaller screens, with breakpoints at 1024 and 600px.*/
 @media (max-width:1024px) {
     /*For all html-pages*/
