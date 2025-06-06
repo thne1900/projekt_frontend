@@ -127,7 +127,7 @@ function toggleMovieText(movieText, title, movieButton) {
  */
 async function getMovie(title, movieText){
 
-    let movieUrl=`http://www.omdbapi.com/?apikey=1af9efb&t=${title}`;
+    let movieUrl=`https://www.omdbapi.com/?apikey=1af9efb&t=${title}`;
     console.log(movieUrl);
 
     try {
