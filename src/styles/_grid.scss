@@ -23,7 +23,9 @@
     grid-area:2/2/3/2;
 }
 
-#img-skeleton {grid-area: 2/2/3/2;}
+#img-skeleton {
+    grid-area: 2/2/3/2;
+}
 
 h3 {
     grid-area:4/2/4/2;
@@ -36,7 +38,9 @@ h3 {
     grid-area:6/2/7/2;
 }
 
-#memberMessage {grid-area:6/2/7/2;}
+#memberMessage {
+    grid-area:6/2/7/2;
+}
 
 #chat {
     grid-area:7/2/7/2;
@@ -95,7 +99,9 @@ h3 {
     grid-area: 3/2/3/2;
 }
 
-#img-skulls {grid-area:3/1/3/4;}
+#img-skulls {
+    grid-area:3/1/3/4;
+}
 
 form {
     grid-area:4/3/5/3;
@@ -110,7 +116,9 @@ form {
 .footer3 {
     grid-area:5/1/6/4;
 }
-.footer4 {grid-area:6/1/7/4;} 
+.footer4 {
+    grid-area:6/1/7/4;
+} 
 
 /*Grid Area on smaller screen devices such as 1024px and 600px.*/
 @media (max-width:1024px) { 
@@ -163,7 +171,6 @@ form {
     .footer2 {grid-area:8/1/9/4;}
 
     /*api.html*/
-   
     #books-list {grid-area:4/1/5/4;}
     #books-resp {grid-area: 5/1/5/4;}
     .books-info {grid-area:6/1/7/4;}
