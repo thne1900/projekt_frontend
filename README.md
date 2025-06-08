@@ -35,8 +35,8 @@
 - En projektrapport är skriven utifrån en mer specifik arbetsbeskrivning på projektets process och framställande, där metod, resultat, slutsats och källförteckning finns inkluderat. 
 
 
-### Skriven av: thne1900 VT 2025.
-#### Kurs: DT211G Frontend-baserad webbutveckling.
+### Skriven av: thne1900.
+#### Kurs: DT211G Frontend-baserad webbutveckling, VT 2025.
 
 #### Källa:
 - https://stephen-king-api.onrender.com/ (2025-04-28).
