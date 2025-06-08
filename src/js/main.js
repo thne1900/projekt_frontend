@@ -9,7 +9,7 @@ let books=[];
 
 /** 
  * Vid sidinladdning
- * @function window.onload - Inhämtar böckernas data med den anropade funktionen (getBooks). 
+ * @function - window.onload, inhämtar böckernas data med den anropade funktionen (getBooks). 
  * */
 window.onload=()=>{
     getBooks();
